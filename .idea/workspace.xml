@@ -1,25 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AbstractRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CompanyRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/DepartmentRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/CompanyResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/DeparmentResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_15_053440_add_import_id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/cypress.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/now.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/public/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/clint-mckoy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/lock.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/pricing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/register.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/vuetify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/CheckboxField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/DateField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/FileField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/RadioField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/SelectField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/TextField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/TextareaField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/TreeselectField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/FormBase.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Mixins/FieldMixin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Mixins/FormActionsMixin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/Card.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/Item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/ItemGroup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/ItemSubGroup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialAlert.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialChartCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialDropdown.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialSnackbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialStatsCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialTabs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialTestimony.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialWizard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/SnackbarMessage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/Subheading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/VComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/locales/ar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/locales/ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/middleware/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/middleware/hasPermission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/middleware/isAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/middleware/isEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/middleware/isSubscriber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/middleware/middlewarePipeline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/mixins/ValidatorMixin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/plugins/axios/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/plugins/axios/interceptors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/plugins/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/plugins/directives/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/plugins/directives/v-can.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/plugins/vee-validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/plugins/vuetify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/overrides.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_appbar.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_badge.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_buttons.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_calendar.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_card.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_chip.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_footer.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_form.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_map.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_modal.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_notification.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_pages.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_pagination.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_rtl.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_settings.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_sidebar.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_tab.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_table.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_timeline.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_vectormap.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/sass/vuetify-material/_view.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/alert_message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/Dashboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/Actions/StaffActions.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DataTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DefaultForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/AppBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Drawer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Footer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Settings.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/View.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/adminItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/editorItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/subscriberItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/CreateUpdate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Error.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/Btn.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/Heading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/AppBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/Footer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/View.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/tests/e2e/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/tests/e2e/plugins/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/tests/e2e/specs/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/tests/e2e/support/commands.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/tests/e2e/support/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/tests/unit/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/tests/unit/example.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/e-signature.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-signature.loc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,15 +297,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories/Elouquent" />
-    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\e-signature.loc\app\Repositories\Elouquent" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\lang" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -180,11 +315,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610517084688</updated>
-      <workItem from="1610517088203" duration="13686000" />
-      <workItem from="1610556210464" duration="540000" />
-      <workItem from="1610603373318" duration="5033000" />
-      <workItem from="1610688828091" duration="1421000" />
-      <workItem from="1610945305165" duration="9042000" />
+      <workItem from="1610517088203" duration="13353000" />
+      <workItem from="1610563163530" duration="2520000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -200,21 +332,7 @@
       <option name="project" value="LOCAL" />
       <updated>1610524585452</updated>
     </task>
-    <task id="LOCAL-00003" summary="Db structure &amp;&amp; app models.">
-      <created>1610552642224</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1610552642224</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added is_active &amp;&amp; has_signature">
-      <created>1610603755768</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1610603755768</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,8 +362,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init commit." />
     <MESSAGE value="Db structure." />
-    <MESSAGE value="Db structure &amp;&amp; app models." />
-    <MESSAGE value="Added is_active &amp;&amp; has_signature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added is_active &amp;&amp; has_signature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Db structure." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610565737528">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1610565737528" />
+    <state x="347" y="73" width="587" height="534" key="find.popup" timestamp="1610565619775">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="347" y="73" width="587" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1610565619775" />
   </component>
 </project>
