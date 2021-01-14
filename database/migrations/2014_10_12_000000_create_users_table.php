@@ -18,6 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('name')->index();
             $table->string('surname')->index();
             $table->string('password');
+            $table->boolean('is_active')->index()->default(false);
+            $table->boolean('has_signature')->index()->default(false);
             $table->timestamps();
         });
     }
