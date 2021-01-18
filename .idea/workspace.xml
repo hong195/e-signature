@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/e-signature.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-signature.loc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AbstractRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CompanyRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/DepartmentRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/CompanyResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/DeparmentResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_15_053440_add_import_id.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +156,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories/Elouquent" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature.loc\app\Repositories\Elouquent" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\lang" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -159,7 +182,9 @@
       <updated>1610517084688</updated>
       <workItem from="1610517088203" duration="13686000" />
       <workItem from="1610556210464" duration="540000" />
-      <workItem from="1610603373318" duration="364000" />
+      <workItem from="1610603373318" duration="5033000" />
+      <workItem from="1610688828091" duration="1421000" />
+      <workItem from="1610945305165" duration="9042000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -182,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610552642224</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added is_active &amp;&amp; has_signature">
+      <created>1610603755768</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610603755768</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +245,7 @@
     <MESSAGE value="Init commit." />
     <MESSAGE value="Db structure." />
     <MESSAGE value="Db structure &amp;&amp; app models." />
-    <option name="LAST_COMMIT_MESSAGE" value="Db structure &amp;&amp; app models." />
+    <MESSAGE value="Added is_active &amp;&amp; has_signature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added is_active &amp;&amp; has_signature" />
   </component>
 </project>
