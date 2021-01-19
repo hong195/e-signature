@@ -24,8 +24,8 @@ class Company extends Model
         return $this->hasMany(Department::class);
     }
 
-    public function tokens() : HasMany
+    public function settings() : HasMany
     {
-        return $this->hasMany(Token::class);
+        return $this->hasMany(CompanySetting::class);
     }
 }

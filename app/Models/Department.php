@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Observers\DepartmentObserver;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -18,5 +19,11 @@ class Department extends Model
     public function company() : BelongsTo
     {
         return $this->belongsTo(Company::class);
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+        self::observe(DepartmentObserver::class);
     }
 }
