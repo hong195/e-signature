@@ -17,6 +17,11 @@ const router = new Router({
       component: () => import('@/views/pages/Index'),
       children: [
         {
+          name: 'create-application',
+          path: 'create-application',
+          component: () => import('@/views/pages/ApplicationForm'),
+        },
+        {
           name: 'login',
           path: 'login',
           component: () => import('@/views/pages/Login'),
