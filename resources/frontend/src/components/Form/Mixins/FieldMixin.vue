@@ -14,6 +14,14 @@
         type: String,
         required: true,
       },
+      placeholder: {
+        type: String,
+        required: false,
+      },
+      hint: {
+        type: String,
+        required: false,
+      },
       scope: {
         type: String,
         default: '',

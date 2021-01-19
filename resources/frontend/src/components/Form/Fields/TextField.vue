@@ -13,6 +13,8 @@
       :type="type"
       v-bind="attributes"
       :label="label"
+      :hint="hint"
+      :placeholder="placeholder"
     />
   </validation-provider>
 </template>

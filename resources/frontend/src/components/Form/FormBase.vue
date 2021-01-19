@@ -13,6 +13,8 @@
             :type="field.type"
             :name="field.name"
             :label="field.label"
+            :placeholder="field.placeholder"
+            :hint="field.hint"
             :value="field.value"
             :validation-rule="field.rule"
             :options="field.options"
