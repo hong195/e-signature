@@ -3,11 +3,11 @@
 
 namespace App\Services\Yandex;
 
-use App\Services\ApiRequest\ApiRequestInterface;
+use App\Services\HttpClient\Request\RequestInterface;
+use App\Services\HttpClient\Response\ResponseInterface;
 use Illuminate\Support\Facades\Http;
 
-
-class YandexService
+class YandexService implements SyncApiInterface, TokenInterface
 {
     /**
      * @var Http
@@ -18,35 +18,65 @@ class YandexService
      */
     private $url;
 
-    public function __construct(ApiRequestInterface $request, string $url, string $token)
-    {
-        $request->setHeaders([
-            'Authorization' => "OAuth {$token}",
-        ]);
+    private $token;
 
+    private $headers = [];
+
+    public function __construct(RequestInterface $request, string $url = null, string $token = null)
+    {
         $this->request = $request;
         $this->url = $url;
+        $this->token = $token;
     }
 
-    public function index(array $options) : \Illuminate\Http\Client\Response
+    public function getResourcesList(array $options): ResponseInterface
     {
-        return $this->request->get($this->url, $options);
+        $this->headers['Content-Type'] = 'application/json';
+
+        return $this->make()->get($this->url, $options);
     }
 
-    public function store(array $data): \Illuminate\Http\Client\Response
+    public function storeResource(array $data): ResponseInterface
     {
-        return $this->request->post($this->url, $data);
+        $this->headers['Content-type'] = 'application/json';
+
+        return $this->make()->post($this->url, $data);
     }
 
-    public function update(int $id,array $data): \Illuminate\Http\Client\Response
+    public function updateResource(int $id, array $data): ResponseInterface
     {
         $updateUrl = "{$this->url}/{$id}";
-        return $this->request->put($updateUrl, $data);
+        $this->headers['Content-type'] = 'application/json';
+
+        return $this->make()->patch($updateUrl, $data);
     }
 
-    public function delete(int $id): \Illuminate\Http\Client\Response
+    public function deleteResource(int $id): ResponseInterface
     {
-        $deleteUrl = "$this->url . $id";
-        return $this->request->delete($deleteUrl);
+        $deleteUrl = "{$this->url}/{$id}";
+        return $this->make()->delete($deleteUrl);
+    }
+
+    protected function make()
+    {
+        if (!$this->token) {
+            return $this->request;
+        }
+
+        return $this->request->setHeaders($this->headers);
+    }
+
+    public function setUrl(string $url): self
+    {
+        $this->url = $url;
+        return $this;
+    }
+
+    public function setToken(string $token): self
+    {
+        $this->token = $token;
+        $this->headers['Authorization'] = "OAuth {$token}";
+
+        return $this;
     }
 }

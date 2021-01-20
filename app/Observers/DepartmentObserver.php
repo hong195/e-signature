@@ -4,32 +4,22 @@ namespace App\Observers;
 
 use App\Models\Department;
 use App\Models\Traits\CompanyToken;
-use App\Services\ApiRequest\ApiRequestInterface;
-use App\Services\Yandex\YandexService;
+use App\Services\Yandex\SyncApiInterface;
 
 class DepartmentObserver
 {
     use CompanyToken;
 
-    /**
-     * @var ApiRequestInterface
-     */
-    private $request;
+    private $syncService;
 
-    /**
-     * @var ApiRequestInterface
-     */
-    private $endPoint;
-
-    public function __construct(ApiRequestInterface $request)
+    public function __construct(SyncApiInterface $syncService)
     {
-        $this->request = $request;
-        $this->endPoint = config('yandex_api_endpoint') . '/departments';
+        $this->syncService = $syncService;
     }
 
     public function saved(Department $department)
     {
-        if (!$department->import_id) {
+        if (!$department->wasRecentlyCreated && !$department->import_id) {
             return;
         }
 
@@ -38,16 +28,21 @@ class DepartmentObserver
         if (!$token) {
             return;
         }
-        $syncService = new YandexService($this->request, $this->endPoint, $token);
 
-        $data = ['name' => $department->name];
+        $this->syncService->setToken($token);
+        $data = ['name' => $department->name, 'parent_id' => 1];
 
-        if ($department->wasRecentlyCreated) {
-            $syncService->store($data);
-            return;
+        $response = $department->wasRecentlyCreated
+                    ? $this->syncService->storeResource($data)
+                    : $this->syncService->updateResource($department->import_id,$data);
+
+        if ($response->clientError()) {
+            $response->throw();
         }
 
-        $syncService->update($data);
+        $body = $response->json();
+        $department->import_id = $body['id'];
+        $department->saveQuietly();
     }
 
     public function deleted(Department $department)
@@ -62,8 +57,10 @@ class DepartmentObserver
             return;
         }
 
-        $syncService = new YandexService($this->request, $this->endPoint, $token);
+        $response = $this->syncService->deleteResource($department->import_id);
 
-        $syncService->delete($department->import_id);
+        if ($response->clientError()) {
+            $response->throw();
+        }
     }
 }

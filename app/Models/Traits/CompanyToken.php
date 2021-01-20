@@ -8,6 +8,10 @@ use App\Models\CompanySetting;
 
 trait CompanyToken
 {
+    /**
+     * @param int $companyId
+     * @return null|string
+     */
     public function getCompanyToken(int $companyId)
     {
         if (!$companyId) {

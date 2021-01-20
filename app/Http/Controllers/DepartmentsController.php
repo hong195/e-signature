@@ -36,7 +36,7 @@ class DepartmentsController extends Controller
         //
     }
 
-    public function update(Request $request, Department $department): \Illuminate\Http\JsonResponse
+    public function update(DepartmentRequest $request, Department $department): \Illuminate\Http\JsonResponse
     {
         $department->update($request->validated());
 

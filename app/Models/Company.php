@@ -28,4 +28,9 @@ class Company extends Model
     {
         return $this->hasMany(CompanySetting::class);
     }
+
+    public function users(): \Illuminate\Database\Eloquent\Relations\HasManyThrough
+    {
+        return $this->hasManyThrough(User::class, Department::class);
+    }
 }

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Services\ApiRequest;
+namespace App\Services\HttpClient\Request;
 
 
 interface RequestHeadersInterface
