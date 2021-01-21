@@ -4,7 +4,7 @@ namespace App\Observers;
 
 use App\Models\Department;
 use App\Models\Traits\CompanyToken;
-use App\Services\Yandex\SyncApiInterface;
+use App\Services\SyncService\SyncInterface;
 
 class DepartmentObserver
 {
@@ -12,7 +12,7 @@ class DepartmentObserver
 
     private $syncService;
 
-    public function __construct(SyncApiInterface $syncService)
+    public function __construct(SyncInterface $syncService)
     {
         $this->syncService = $syncService;
     }

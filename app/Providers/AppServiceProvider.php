@@ -2,12 +2,10 @@
 
 namespace App\Providers;
 
-use App\Observers\DepartmentObserver;
-use App\Observers\UserSavedObserver;
-use App\Services\HttpClient\Request\RequestInterface;
-use App\Services\HttpClient\Request\GuzzleHttpRequest;
-use App\Services\Yandex\SyncApiInterface;
-use App\Services\Yandex\YandexService;
+use App\Services\SyncService\SyncInterface;
+use App\Services\SyncService\UserSync;
+use App\Services\SyncService\UserSyncInterface;
+use App\Services\SyncService\Yandex\YandexService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,21 +17,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(RequestInterface::class, GuzzleHttpRequest::class);
-
-        $this->app->when(DepartmentObserver::class)
-                ->needs(SyncApiInterface::class)
-                ->give(function() {
-                    $endPoint = config('yandex.api_endpoint') . '/departments';
-                    return new YandexService($this->app->make(RequestInterface::class), $endPoint);
-                });
-
-        $this->app->when(UserSavedObserver::class)
-            ->needs(SyncApiInterface::class)
-            ->give(function() {
-                $endPoint = config('yandex.api_endpoint') . '/users';
-                return new YandexService($this->app->make(RequestInterface::class), $endPoint);
-            });
+        $this->app->bind(SyncInterface::class, YandexService::class);
+        $this->app->bind(UserSyncInterface::class, UserSync::class);
     }
 
     /**

@@ -2,10 +2,8 @@
 
 namespace App\Models;
 
-use App\Observers\UserSavedObserver;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasOneThrough;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -35,20 +33,17 @@ class User extends Authenticatable
         'password',
     ];
 
+    protected $casts = [
+        'import_id' => 'integer'
+    ];
+
     public function department() : BelongsTo
     {
         return $this->belongsTo(Department::class);
     }
 
-    protected static function boot()
+    public function contacts(): \Illuminate\Database\Eloquent\Relations\MorphMany
     {
-        parent::boot();
-        self::observe(UserSavedObserver::class);
-    }
-
-    public function generateUserPassword()
-    {
-        $randomInt = rand(100, 1000);
-        return strtolower("{$this->name}@{$this->surname}@{$randomInt}");
+        return $this->morphMany(Contact::class, 'contactable');
     }
 }

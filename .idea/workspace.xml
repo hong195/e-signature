@@ -4,35 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="Added department two-way synchronization:&#10;&#10;- Added&#10;  guzzlehttp/guzzle package for backend api requests&#10;  yandex config settings&#10;  yandex service&#10;  api requester based on GuzzleHttp&#10;  department observer&#10;- Updated&#10;  Company, Company settings models">
-      <change afterPath="$PROJECT_DIR$/app/Events/UserApproved.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/MissingTokenException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/SynchronizationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserApproveController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Observers/UserSavedObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/HttpClient/Request/GuzzleHttpRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/HttpClient/Response/GuzzleHttpResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/HttpClient/Response/ResponseInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/SynchronizerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/UserSynchronizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Yandex/SyncApiInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Yandex/TokenInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_20_063543_add_parent_id_column.php" afterDir="false" />
+    <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/UserSavedListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/PasswordGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/SyncService/SyncInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Events/UserApproved.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/UserSaved.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserApproveController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserApproveController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AbstractRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/AbstractRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserStoreRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Department.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Traits/CompanyToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Traits/CompanyToken.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Observers/DepartmentObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/DepartmentObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/UserSavedObserver.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/ApiRequest/ApiRequestInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/HttpClient/Request/RequestInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/ApiRequest/GuzzleHttp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/ApiRequest/RequestHeadersInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/HttpClient/Request/RequestHeadersInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Yandex/YandexService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Yandex/YandexService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/yandex.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/yandex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/HttpClient/Request/GuzzleHttpRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/HttpClient/Request/RequestHeadersInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/HttpClient/Request/RequestInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/HttpClient/Response/GuzzleHttpResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/HttpClient/Response/ResponseInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/SynchronizerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/SyncService/UserSyncInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/UserSynchronizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/SyncService/UserSync.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Yandex/SyncApiInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Yandex/TokenInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Yandex/YandexService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/SyncService/Yandex/YandexService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_15_053440_add_import_id.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_15_053440_add_import_id.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,6 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="backend" />
         <entry key="$PROJECT_DIR$" value="frontend" />
       </map>
     </option>
@@ -199,11 +198,11 @@
       <recent name="C:\OpenServer\domains\e-signature.loc\resources\lang" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\SyncService" />
       <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\HttpClient" />
       <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\HttpClient\Request" />
       <recent name="C:\OpenServer\domains\e-signature.loc\app\Models\Traits" />
       <recent name="C:\OpenServer\domains\e-signature.loc\app\Models" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\Yandex" />
     </key>
   </component>
   <component name="RunManager">
@@ -227,7 +226,8 @@
       <workItem from="1610945305165" duration="19360000" />
       <workItem from="1611032040240" duration="15152000" />
       <workItem from="1611119347249" duration="1058000" />
-      <workItem from="1611120789736" duration="24033000" />
+      <workItem from="1611120789736" duration="36150000" />
+      <workItem from="1611205134615" duration="12240000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -285,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611041889414</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Yandex service integration.">
+      <created>1611152258784</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611152258784</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +327,7 @@
     <MESSAGE value="Added Users,Companies,Departments controllers, requests.&#10;&#10;- Updated&#10;  users table&#10;  added department import id column" />
     <MESSAGE value="Added login column for users table." />
     <MESSAGE value="Added department two-way synchronization:&#10;&#10;- Added&#10;  guzzlehttp/guzzle package for backend api requests&#10;  yandex config settings&#10;  yandex service&#10;  api requester based on GuzzleHttp&#10;  department observer&#10;- Updated&#10;  Company, Company settings models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added department two-way synchronization:&#10;&#10;- Added&#10;  guzzlehttp/guzzle package for backend api requests&#10;  yandex config settings&#10;  yandex service&#10;  api requester based on GuzzleHttp&#10;  department observer&#10;- Updated&#10;  Company, Company settings models" />
+    <MESSAGE value="Yandex service integration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Yandex service integration." />
   </component>
 </project>

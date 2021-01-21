@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Traits\CompanyToken;
 use App\Models\User;
-use App\Services\Yandex\SyncApiInterface;
+use App\Services\SyncService\Yandex\SyncApiInterface;
 use Illuminate\Http\Response;
 
 class UserApproveController extends Controller

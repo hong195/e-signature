@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\UserRequest;
+use App\Events\UserApproved;
+use App\Events\UserSaved;
+use App\Http\Requests\UserStoreRequest;
+use App\Http\Requests\UserUpdateRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -35,9 +38,14 @@ class UsersController extends Controller
 
     }
 
-    public function store(UserRequest $request, User $user): \Illuminate\Http\JsonResponse
+    public function store(UserStoreRequest $request, User $user): \Illuminate\Http\JsonResponse
     {
-        $user->create($request->validated());
+        $validatedData = $request->validated();
+
+        $user = $user->create($request->validated());
+
+        UserSaved::dispatch($user, $validatedData);
+
         return response()->json(['message' => 'Ваша заявка принята']);
     }
 
@@ -51,9 +59,16 @@ class UsersController extends Controller
         //
     }
 
-    public function update(UserRequest $request, User $user): \Illuminate\Http\JsonResponse
+    public function update(UserUpdateRequest $request, User $user): \Illuminate\Http\JsonResponse
     {
+        $validatedData = $request->validated();
+
         $user->update($request->validated());
+
+        $user = $user->refresh();
+
+        UserSaved::dispatch($user, $validatedData);
+
         return response()->json(['message' => 'Пользователь успешно обновлен']);
     }
 

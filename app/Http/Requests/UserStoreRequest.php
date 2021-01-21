@@ -3,8 +3,9 @@
 namespace App\Http\Requests;
 
 use App\Models\Department;
+use App\Models\User;
 
-class UserRequest extends AbstractRequest
+class UserStoreRequest extends AbstractRequest
 {
     public function rules() : array
     {
@@ -12,7 +13,7 @@ class UserRequest extends AbstractRequest
             'department_id' => ['required', 'exists:'.Department::class.',id'],
             'name' => ['required'],
             'surname' => ['required'],
-            'login' => ['required'],
+            'login' => ['required', 'unique:'. User::class . ',login'],
             'password' => ['nullable']
         ];
     }

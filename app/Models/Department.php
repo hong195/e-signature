@@ -16,6 +16,10 @@ class Department extends Model
         'name',
     ];
 
+    protected $casts = [
+        'import_id' => 'integer'
+    ];
+
     public function company() : BelongsTo
     {
         return $this->belongsTo(Company::class, 'company_id');

@@ -14,12 +14,12 @@ class AddImportId extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('import_id')->index()->after('id')->nullable();
-            $table->integer('position')->index()->after('name')->nullable();
+            $table->string('import_id')->index()->after('id')->nullable();
+            $table->string('position')->index()->after('name')->nullable();
         });
 
         Schema::table('departments', function (Blueprint $table) {
-            $table->integer('import_id')->index()->after('id')->nullable();
+            $table->string('import_id')->index()->after('id')->nullable();
         });
     }
 
