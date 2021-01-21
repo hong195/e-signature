@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name')->index();
             $table->string('surname')->index();
             $table->string('password')->nullable();
-            $table->boolean('is_active')->index()->default(false);
+            $table->string('status')->index()->default(\App\Enums\UserStatus::PENDING);
             $table->boolean('has_signature')->index()->default(false);
             $table->timestamps();
         });

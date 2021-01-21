@@ -4,63 +4,69 @@ namespace App\Observers;
 
 use App\Models\Department;
 use App\Models\Traits\CompanyToken;
-use App\Services\SyncService\SyncInterface;
+use App\Services\SyncService\Interfaces\SynchronizerServiceInterface;
 
 class DepartmentObserver
 {
     use CompanyToken;
 
-    private $syncService;
+    private $url;
 
-    public function __construct(SyncInterface $syncService)
+    public function __construct()
     {
-        $this->syncService = $syncService;
+        $this->url = config('yandex.connect.directory_api.endpoint') . '/departments';
     }
 
+    /**
+     * @param Department $department
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     * @throws \Exception
+     */
     public function saved(Department $department)
     {
-        if (!$department->wasRecentlyCreated && !$department->import_id) {
-            return;
-        }
-
         $token = $this->getCompanyToken($department->company_id);
 
-        if (!$token) {
+        if (!$token || (!$department->wasRecentlyCreated && !$department->import_id)) {
             return;
         }
 
-        $this->syncService->setToken($token);
+        $syncService = app()->make(SynchronizerServiceInterface::class, [ 'url' => $this->url, 'token' => $token]);
+
         $data = ['name' => $department->name, 'parent_id' => 1];
 
-        $response = $department->wasRecentlyCreated
-                    ? $this->syncService->storeResource($data)
-                    : $this->syncService->updateResource($department->import_id,$data);
-
-        if ($response->clientError()) {
-            $response->throw();
+        try {
+            $response = $department->wasRecentlyCreated
+                ? $syncService->sync($data)
+                : $syncService->reSync($department->import_id,$data);
+        }catch (\Exception $e){
+            report($e);
+            throw $e;
         }
 
-        $body = $response->json();
-        $department->import_id = $body['id'];
+        $department->import_id = $response['id'];
         $department->saveQuietly();
     }
 
+    /**
+     * @param Department $department
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     * @throws \Exception
+     */
     public function deleted(Department $department)
     {
-        if (!$department->import_id) {
-            return;
-        }
-
         $token = $this->getCompanyToken($department->company_id);
 
-        if (!$token) {
+        if (!$token || !$department->import_id) {
             return;
         }
 
-        $response = $this->syncService->deleteResource($department->import_id);
+        $syncService = app()->make(SynchronizerServiceInterface::class, [ 'url' => $this->url, 'token' => $token]);
 
-        if ($response->clientError()) {
-            $response->throw();
+        try {
+            $syncService->deleteResource($department->import_id);
+        }catch (\Exception $e){
+            report($e);
+            throw $e;
         }
     }
 }

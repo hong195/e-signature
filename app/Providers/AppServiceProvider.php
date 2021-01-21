@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
-use App\Services\SyncService\SyncInterface;
-use App\Services\SyncService\UserSync;
-use App\Services\SyncService\UserSyncInterface;
-use App\Services\SyncService\Yandex\YandexService;
+use App\Services\ResourceService\Interfaces\ResourceServiceInterface;
+use App\Services\SyncService\Interfaces\SynchronizerServiceInterface;
+use App\Services\SyncService\Synchronizer;
+use App\Services\ResourceService\YandexResource;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -17,8 +17,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(SyncInterface::class, YandexService::class);
-        $this->app->bind(UserSyncInterface::class, UserSync::class);
+        $this->app->bind(ResourceServiceInterface::class, YandexResource::class);
+        $this->app->bind(SynchronizerServiceInterface::class, Synchronizer::class);
     }
 
     /**

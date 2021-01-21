@@ -11,29 +11,29 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class UserSaved
+class UserUpdated
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     /**
-     * @var array
-     */
-    public $validatedUserData;
-    /**
      * @var User
      */
     public $user;
+    /**
+     * @var string
+     */
+    public $password;
 
     /**
      * Create a new event instance.
      *
      * @param User $user
-     * @param array $validatedUserData
+     * @param string $password
      */
-    public function __construct(User $user, array $validatedUserData = [])
+    public function __construct(User $user, string $password = '')
     {
-        $this->validatedUserData = $validatedUserData;
         $this->user = $user;
+        $this->password = $password;
     }
 
     /**

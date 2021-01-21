@@ -13,7 +13,7 @@ class UserStoreRequest extends AbstractRequest
             'department_id' => ['required', 'exists:'.Department::class.',id'],
             'name' => ['required'],
             'surname' => ['required'],
-            'login' => ['required', 'unique:'. User::class . ',login'],
+            'nickname' => ['required', 'unique:'. User::class . ',nickname', 'alpha'],
             'password' => ['nullable']
         ];
     }

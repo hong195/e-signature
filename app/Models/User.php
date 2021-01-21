@@ -20,7 +20,8 @@ class User extends Authenticatable
         'department_id',
         'name',
         'surname',
-        'login',
+        'nickname',
+        'status',
         'password',
     ];
 

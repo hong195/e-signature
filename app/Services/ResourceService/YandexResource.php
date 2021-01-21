@@ -1,12 +1,12 @@
 <?php
 
 
-namespace App\Services\SyncService\Yandex;
+namespace App\Services\ResourceService;
 
-use App\Services\SyncService\SyncInterface;
+use App\Services\ResourceService\Interfaces\ResourceServiceInterface;
 use Illuminate\Support\Facades\Http;
 
-class YandexService implements SyncInterface
+class YandexResource implements ResourceServiceInterface
 {
     /**
      * @var Http
@@ -21,7 +21,7 @@ class YandexService implements SyncInterface
 
     private $headers = [];
 
-    public function __construct(string $url = null, string $token = null)
+    public function __construct(string $url, string $token)
     {
         $this->request = new Http();
         $this->url = $url;
@@ -29,21 +29,21 @@ class YandexService implements SyncInterface
         $this->headers['Authorization'] = "OAuth {$this->token}";
     }
 
-    public function getResourcesList(array $options): \Illuminate\Http\Client\Response
+    public function get(array $options): \Illuminate\Http\Client\Response
     {
         $this->headers['Content-Type'] = 'application/json';
 
         return $this->make()->get($this->url, $options);
     }
 
-    public function storeResource(array $data): \Illuminate\Http\Client\Response
+    public function store(array $data): \Illuminate\Http\Client\Response
     {
         $this->headers['Content-type'] = 'application/json';
 
         return $this->make()->post($this->url, $data);
     }
 
-    public function updateResource(int $id, array $data): \Illuminate\Http\Client\Response
+    public function update(int $id, array $data): \Illuminate\Http\Client\Response
     {
         $updateUrl = "{$this->url}/{$id}";
         $this->headers['Content-type'] = 'application/json';
@@ -51,7 +51,7 @@ class YandexService implements SyncInterface
         return $this->make()->patch($updateUrl, $data);
     }
 
-    public function deleteResource(int $id): \Illuminate\Http\Client\Response
+    public function delete(int $id): \Illuminate\Http\Client\Response
     {
         $deleteUrl = "{$this->url}/{$id}";
         return $this->make()->delete($deleteUrl);

@@ -18,6 +18,7 @@ class UserUpdateRequest extends AbstractRequest
             'department_id' => ['required', 'exists:'.Department::class.',id'],
             'name' => ['required'],
             'surname' => ['required'],
+            'status' => ['required'],
             'password' => ['nullable']
         ];
     }

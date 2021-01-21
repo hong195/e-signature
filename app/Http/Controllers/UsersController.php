@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\UserApproved;
-use App\Events\UserSaved;
+use App\Events\UserCreated;
+use App\Events\UserUpdated;
 use App\Http\Requests\UserStoreRequest;
 use App\Http\Requests\UserUpdateRequest;
 use App\Http\Resources\UserResource;
@@ -44,7 +44,7 @@ class UsersController extends Controller
 
         $user = $user->create($request->validated());
 
-        UserSaved::dispatch($user, $validatedData);
+        UserCreated::dispatch($user, $validatedData);
 
         return response()->json(['message' => 'Ваша заявка принята']);
     }
@@ -67,7 +67,10 @@ class UsersController extends Controller
 
         $user = $user->refresh();
 
-        UserSaved::dispatch($user, $validatedData);
+        if ($user->import_id) {
+            $password = array_key_exists('password', $validatedData) ? $validatedData['password'] : '';
+            UserUpdated::dispatch($user, $password);
+        }
 
         return response()->json(['message' => 'Пользователь успешно обновлен']);
     }
