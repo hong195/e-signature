@@ -13,8 +13,9 @@ class UserStoreRequest extends AbstractRequest
             'department_id' => ['required', 'exists:'.Department::class.',id'],
             'name' => ['required'],
             'surname' => ['required'],
-            'nickname' => ['required', 'unique:'. User::class . ',nickname', 'alpha'],
-            'password' => ['nullable']
+            'nickname' => ['required', 'unique:'. User::class . ',nickname', 'alpha_dash', 'bail'],
+            'contacts.personal_email' => ['required', 'email'],
+            'contacts.phone' => ['required'],
         ];
     }
 }

@@ -44,6 +44,11 @@ class UsersController extends Controller
 
         $user = $user->create($request->validated());
 
+        $user->contacts()->createMany([
+            ['name' => 'personal_email', 'value' => $validatedData['contacts']['personal_email']],
+            ['name' => 'phone', 'value' => $validatedData['contacts']['phone']],
+        ]);
+
         UserCreated::dispatch($user, $validatedData);
 
         return response()->json(['message' => 'Ваша заявка принята']);
@@ -65,7 +70,12 @@ class UsersController extends Controller
 
         $user->update($request->validated());
 
-        $user = $user->refresh();
+        $user->contacts()->delete();
+
+        $user->contacts()->createMany([
+            ['name' => 'personal_email', 'value' => $validatedData['contacts']['personal_email']],
+            ['name' => 'phone', 'value' => $validatedData['contacts']['phone']],
+        ]);
 
         if ($user->import_id) {
             $password = array_key_exists('password', $validatedData) ? $validatedData['password'] : '';

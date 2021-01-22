@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Enums/UserStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Events/UserUpdated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/ReSyncUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/ResourceService/Interfaces/ResourceServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/SyncService/Interfaces/SynchronizerServiceInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Events/UserSaved.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/UserCreated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/MissingTokenException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Listeners/UserSavedListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/SyncUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/DepartmentObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/DepartmentObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/SyncService/Interfaces/DepartmentSyncInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/SyncService/Interfaces/SyncServiceInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/SyncService/Interfaces/UserSyncInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/SyncService/Synchronizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/SyncService/Synchronizer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/SyncService/Yandex/DepartmentSynchronizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/SyncService/Yandex/SyncService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ResourceService/YandexResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/SyncService/Yandex/UserSynchronizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/yandex.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/yandex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_19_071640_add_user_login_column.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_19_071640_add_user_nickname_column.php" afterDir="false" />
-    </list>
+    <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,13 +157,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Services/Yandex" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\views" />
       <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\Yandex" />
       <recent name="C:\OpenServer\domains\e-signature.loc\app\Repositories\Elouquent" />
       <recent name="C:\OpenServer\domains\e-signature.loc\resources\lang" />
@@ -226,7 +200,7 @@
       <workItem from="1611119347249" duration="1058000" />
       <workItem from="1611120789736" duration="36150000" />
       <workItem from="1611205134615" duration="24946000" />
-      <workItem from="1611293425004" duration="7521000" />
+      <workItem from="1611293425004" duration="21559000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -305,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611242489169</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated users &amp;&amp; department synchronization.">
+      <created>1611301294469</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611301294469</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added welcome mail notification after user registration:&#10;&#10;- Updated&#10;  UsersController store &amp;&amp; update methods.">
+      <created>1611335457333</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611335457333</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +331,8 @@
     <MESSAGE value="Yandex service integration." />
     <MESSAGE value="Updated user sync logic:&#10;&#10;- Added&#10;  event UserSaved &amp;&amp; listener UserSavedListener&#10;  split UserRequest into store &amp;&amp; update requests&#10;  SyncInterface&#10;  Password generator&#10;- Updated&#10;  UsersController&#10;  Yandex service &#10;  import id column type&#10;- Removed&#10;  unnecessary abstract layer (Response, Request)" />
     <MESSAGE value="Updated department synchronization." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated department synchronization." />
+    <MESSAGE value="Updated users &amp;&amp; department synchronization." />
+    <MESSAGE value="Added welcome mail notification after user registration:&#10;&#10;- Updated&#10;  UsersController store &amp;&amp; update methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added welcome mail notification after user registration:&#10;&#10;- Updated&#10;  UsersController store &amp;&amp; update methods." />
   </component>
 </project>
