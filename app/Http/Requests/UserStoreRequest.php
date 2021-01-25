@@ -14,8 +14,8 @@ class UserStoreRequest extends AbstractRequest
             'name' => ['required'],
             'surname' => ['required'],
             'nickname' => ['required', 'unique:'. User::class . ',nickname', 'alpha_dash', 'bail'],
-            'contacts.personal_email' => ['required', 'email'],
-            'contacts.phone' => ['required'],
+            'email' => ['required', 'email', 'unique:users'],
+            'phone' => ['required'],
         ];
     }
 }

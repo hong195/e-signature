@@ -45,10 +45,6 @@ class SyncUser
             return;
         }
 
-        $userContacts = $payload->user->contacts;
-        $userPhone = $userContacts->where('name', 'phone')->first()->value;
-        $userPersonalEmail = $userContacts->where('name', 'personal_email')->first()->value;
-
         $syncService = app()->make(SynchronizerServiceInterface::class, ['url' => $this->url, 'token' => $token]);
 
         $dataToSync = [
@@ -59,14 +55,8 @@ class SyncUser
             'contacts' => [
                 [
                     'type' => 'phone',
-                    'value' => $userPhone,
+                    'value' => $payload->user->phone,
                     'label' => 'Мобильный телефон'
-                ],
-                [
-                    'type' => 'email',
-                    'value' => $userPersonalEmail,
-                    'label' => 'Персональная почта',
-                    'main' => false
                 ],
             ],
             'department_id' => $payload->user->department->import_id,
@@ -77,21 +67,17 @@ class SyncUser
         try {
             $syncedData = $syncService->sync($dataToSync);
 
-            $payload->user->contacts()->create([
-                'name' => 'corporate_email',
-                'value' => $syncedData['email']
-            ]);
+            Notification::route('mail', $payload->user->email)
+                ->notify(new WelcomeNotification($syncedData['email'], $dataToSync['password']));
 
             $payload->user->password = bcrypt($dataToSync['password']);
             $payload->user->import_id = $syncedData['id'];
             $payload->user->status = UserStatus::ACTIVE;
+            $payload->user->email = $syncedData['email'];
             $payload->user->save();
 
         } catch (SynchronizationException $e) {
             throw $e;
         }
-
-        Notification::route('mail', $userPersonalEmail)
-            ->notify(new WelcomeNotification($syncedData['email'], $dataToSync['password']));
     }
 }

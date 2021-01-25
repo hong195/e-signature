@@ -5,18 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Spatie\MediaLibrary\HasMedia\HasMedia;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
-class Company extends Model
+class Company extends Model implements HasMedia
 {
     use HasFactory;
+    use HasMediaTrait;
+
 
     protected $fillable = [
         'name',
         'address',
         'website',
-        'yandex_connect_token',
-        'logo_url',
-        'color',
     ];
 
     public function departments() : HasMany
@@ -32,5 +33,12 @@ class Company extends Model
     public function users(): \Illuminate\Database\Eloquent\Relations\HasManyThrough
     {
         return $this->hasManyThrough(User::class, Department::class);
+    }
+
+    public function registerMediaCollections()
+    {
+        $this
+            ->addMediaCollection('logo')
+            ->singleFile();
     }
 }

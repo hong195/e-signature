@@ -40,10 +40,6 @@ class ReSyncUser
             return;
         }
 
-        $userContacts = $payload->user->contacts;
-        $userPhone = $userContacts->where('name', 'phone')->first()->value;
-        $userPersonalEmail = $userContacts->where('name', 'personal_email')->first()->value;
-
         $syncService = app()->make(SynchronizerServiceInterface::class, ['url' => $this->url, 'token' => $token]);
 
         $dataToSync = [
@@ -54,14 +50,8 @@ class ReSyncUser
             'contacts' => [
                 [
                     'type' => 'phone',
-                    'value' => $userPhone,
+                    'value' => $payload->user->phone,
                     'label' => 'Мобильный телефон'
-                ],
-                [
-                    'type' => 'email',
-                    'value' => $userPersonalEmail,
-                    'label' => 'Персональная почта',
-                    'main' => false
                 ],
             ],
             'department_id' => $payload->user->department->import_id,
@@ -75,6 +65,7 @@ class ReSyncUser
 
         try {
             $syncService->reSync($payload->user->import_id, $dataToSync);
+
 
             if ($payload->user->isDirty()) {
                 $payload->user->save();

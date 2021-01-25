@@ -19,8 +19,7 @@ class UserUpdateRequest extends AbstractRequest
             'name' => ['required'],
             'surname' => ['required'],
             'status' => ['required'],
-            'contacts.personal_email' => ['required', 'email'],
-            'contacts.phone' => ['required'],
+            'phone' => ['required'],
             'password' => ['nullable']
         ];
     }
