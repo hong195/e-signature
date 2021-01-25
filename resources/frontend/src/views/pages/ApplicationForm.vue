@@ -1,15 +1,12 @@
 <template>
   <v-container
     id="regular-forms"
-    fluid
     tag="section"
-    class="mt-3"
+    class="mt-6"
   >
-    <base-material-card
-      color="success"
-      icon="mdi-account"
-      title=""
-      class="px-5 py-3 mb-10"
+    <v-card
+      light
+      class="px-5 py-3 my-10"
     >
       <form-base
         v-model="formValue"
@@ -18,8 +15,14 @@
         :method="method"
         :on-submit="createOrUpdate"
         :on-update="createOrUpdate"
-      />
-    </base-material-card>
+      >
+        <template slot="actions">
+          <v-img height="300" contain src="@/assets/signature-card.jpg" />
+          <v-btn color="success">Отправить</v-btn>
+        </template>
+      </form-base>
+
+    </v-card>
   </v-container>
 </template>
 
@@ -65,11 +68,22 @@
         },
         {
           component: 'select',
-          name: 'pharmacy_id',
+          name: 'business',
           label: 'Из какого Вы Бизнес Юнита?',
           value: null,
           rule: 'required_if:role,2',
-          attributes: { outlined: true, cols: 12 },
+          attributes: { outlined: true, cols: 6 },
+          options: [
+            { id: 1, name: '\u0410\u043f\u0442\u0435\u043a\u0430 \u211633' },
+          ],
+        },
+        {
+          component: 'select',
+          name: 'department_id',
+          label: 'Департамент',
+          value: null,
+          rule: 'required_if:role,2',
+          attributes: { outlined: true, cols: 6 },
           options: [
             { id: 1, name: '\u0410\u043f\u0442\u0435\u043a\u0430 \u211633' },
           ],

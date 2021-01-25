@@ -13,12 +13,12 @@ const router = new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/pages',
+      path: '/',
       component: () => import('@/views/pages/Index'),
       children: [
         {
           name: 'create-application',
-          path: 'create-application',
+          path: '/',
           component: () => import('@/views/pages/ApplicationForm'),
         },
         {
@@ -27,7 +27,7 @@ const router = new Router({
           component: () => import('@/views/pages/Login'),
         },
         {
-          name: 'Register',
+          name: 'register',
           path: 'register',
           component: () => import('@/views/pages/Register'),
         },
