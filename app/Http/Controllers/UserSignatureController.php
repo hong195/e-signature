@@ -14,7 +14,7 @@ class UserSignatureController extends Controller
         $id = $request->get('id');
 
         $user = User::where('id', $id)->with('contacts')->firstOrFail();
-        $company = Company::where('id', $user->department->company_id)->with('settings')->firstOrFail();
+        $company = Company::where('id', $user->department->company_id)->firstOrFail();
 
         GenerateUserSignatureJob::dispatchNow($user, $company);
 

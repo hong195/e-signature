@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserSignatureController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateUserSignatureJob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/UserSignature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_24_160348_create_media_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_25_062909_add_aditional_columns.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/CompanyEmailIcons.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/emailIcons/default/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/emailIcons/default/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/emailIcons/default/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/emailIcons/default/telegram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/emailIcons/default/web.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/mails/user-signature.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/e-signature.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-signature.loc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Listeners/ReSyncUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/ReSyncUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Listeners/SyncUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/SyncUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_13_154238_contact_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserSignatureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserSignatureController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/UserSignature.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/UserSignature.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,25 +180,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/mails" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/img/emailIcons/1" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\1" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\1" />
       <recent name="C:\OpenServer\domains\e-signature.loc\resources\views\mails" />
       <recent name="C:\OpenServer\domains\e-signature.loc\resources\views" />
       <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\Yandex" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\app\Repositories\Elouquent" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\lang" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\Yandex\Interfaces" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\Yandex" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\SyncService" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\SyncService\Interfaces" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\app\Services\SyncService\Yandex" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\public" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\storage\app\public" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\default" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -234,7 +226,7 @@
       <workItem from="1611205134615" duration="24946000" />
       <workItem from="1611293425004" duration="23467000" />
       <workItem from="1611469466301" duration="12208000" />
-      <workItem from="1611555391119" duration="6406000" />
+      <workItem from="1611555391119" duration="13147000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -334,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611338247398</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated user controller/db/requests:&#10;&#10;- Added&#10;  spatie/media-library package&#10;- Deleted&#10;  contacts table">
+      <created>1611585380993</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611585380993</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,6 +373,7 @@
     <MESSAGE value="Updated department synchronization." />
     <MESSAGE value="Updated users &amp;&amp; department synchronization." />
     <MESSAGE value="Added welcome mail notification after user registration:&#10;&#10;- Updated&#10;  UsersController store &amp;&amp; update methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added welcome mail notification after user registration:&#10;&#10;- Updated&#10;  UsersController store &amp;&amp; update methods." />
+    <MESSAGE value="Updated user controller/db/requests:&#10;&#10;- Added&#10;  spatie/media-library package&#10;- Deleted&#10;  contacts table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated user controller/db/requests:&#10;&#10;- Added&#10;  spatie/media-library package&#10;- Deleted&#10;  contacts table" />
   </component>
 </project>

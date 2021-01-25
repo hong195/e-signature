@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\UsersController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +23,5 @@ Route::resources([
     'companies' => \App\Http\Controllers\CompaniesController::class,
     'departments' => \App\Http\Controllers\DepartmentsController::class
 ]);
+
+Route::resource('signature', \App\Http\Controllers\UserSignatureController::Class)->only('store');

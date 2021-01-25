@@ -2,7 +2,9 @@
 
 namespace App\Notifications;
 
+use App\Models\Company;
 use App\Models\User;
+use App\Services\CompanyEmailIcons;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -27,29 +29,31 @@ class UserSignature extends Notification
     /**
      * @var array
      */
-    private $companySettings;
+    /**
+     * @var Company
+     */
+    private $company;
+    /**
+     * @var string
+     */
+    private $mainColor;
     /**
      * @var array
      */
-    private $companyContacts;
+    private $icons;
 
-//    public function __construct(User $user,
-//                                string $avatarUrl,
-//                                string $companyLogoUrl,
-//                                array $companySettings,
-//                                array $companyContacts)
-//    {
-//        $this->user = $user;
-//        $this->avatarUrl = $avatarUrl;
-//        $this->companyLogoUrl = $companyLogoUrl;
-//        $this->companySettings = $companySettings;
-//        $this->companyContacts = $companyContacts;
-//    }
-    public function __construct(User $user, string $mainColor, string $avatarUrl = null, string $companyLogoUrl = null)
+    public function __construct(User $user,
+                                Company $company,
+                                string $mainColor,
+                                string $avatarUrl = null,
+                                string $companyLogoUrl = null)
     {
         $this->user = $user;
         $this->avatarUrl = $avatarUrl;
         $this->companyLogoUrl = $companyLogoUrl;
+        $this->company = $company;
+        $this->mainColor = $mainColor;
+        $this->icons = app()->make(CompanyEmailIcons::class)->getIcons($this->company->id);
     }
 
     /**
@@ -74,10 +78,11 @@ class UserSignature extends Notification
         $data = [
             'title' => 'Электронная подпись',
             'user' => $this->user,
+            'company' => $this->company,
             'avatarUrl' => $this->avatarUrl,
-            'companySettings' => $this->companySettings,
-            'companyContacts' => $this->companyContacts,
-            'companyLogoUrl' => $this->companyLogoUrl
+            'companyLogoUrl' => $this->companyLogoUrl,
+            'color' => $this->mainColor,
+            'icons' => $this->icons
         ];
 
         return (new MailMessage)
