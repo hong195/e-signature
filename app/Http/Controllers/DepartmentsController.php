@@ -43,9 +43,9 @@ class DepartmentsController extends Controller
         return response()->json(['message' => 'Департамент обновлен'], 201);
     }
 
-    public function destroy($id): \Illuminate\Http\JsonResponse
+    public function destroy(Department $department): \Illuminate\Http\JsonResponse
     {
-        Department::destroy($id);
+        $department->removed = true;
         return response()->json(['message' => 'Департамент удален']);
     }
 }

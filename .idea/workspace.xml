@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/ImportYandexDepartment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_063255_add_head_id.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Department.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_20_063543_add_parent_id_column.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_20_063543_add_parent_id_column.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +222,7 @@
       <workItem from="1611469466301" duration="12208000" />
       <workItem from="1611555391119" duration="14381000" />
       <workItem from="1611607561149" duration="54000" />
-      <workItem from="1611639933997" duration="1225000" />
+      <workItem from="1611639933997" duration="8262000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -332,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611594989290</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="User cannot be deleted.">
+      <created>1611642738392</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611642738392</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,6 +385,7 @@
     <MESSAGE value="Added welcome mail notification after user registration:&#10;&#10;- Updated&#10;  UsersController store &amp;&amp; update methods." />
     <MESSAGE value="Updated user controller/db/requests:&#10;&#10;- Added&#10;  spatie/media-library package&#10;- Deleted&#10;  contacts table" />
     <MESSAGE value="Added user signature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added user signature." />
+    <MESSAGE value="User cannot be deleted." />
+    <option name="LAST_COMMIT_MESSAGE" value="User cannot be deleted." />
   </component>
 </project>

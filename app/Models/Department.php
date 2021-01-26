@@ -14,6 +14,10 @@ class Department extends Model
     protected $fillable = [
         'company_id',
         'name',
+        'import_id',
+        'head_id',
+        'removed',
+        'parent_id'
     ];
 
     protected $casts = [

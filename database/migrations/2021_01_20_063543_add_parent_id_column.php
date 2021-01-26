@@ -14,7 +14,7 @@ class AddParentIdColumn extends Migration
     public function up()
     {
         Schema::table('departments', function(Blueprint $table) {
-            $table->integer('parent_id')->nullable()->index()->after('name');
+            $table->string('parent_id')->nullable()->index()->after('name');
         });
     }
 
