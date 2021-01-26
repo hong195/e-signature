@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\UserStatus;
 use App\Events\UserCreated;
 use App\Events\UserUpdated;
 use App\Http\Requests\UserStoreRequest;
@@ -74,9 +75,13 @@ class UsersController extends Controller
         return response()->json(['message' => 'Пользователь успешно обновлен']);
     }
 
-    public function destroy($id): \Illuminate\Http\JsonResponse
+    public function destroy(User $user): \Illuminate\Http\JsonResponse
     {
-        User::destroy($id);
+        $user->status = UserStatus::DISMISSED;
+
+        if ($user->import_id) {
+            UserUpdated::dispatch($user);
+        }
 
         return response()->json(['message' => 'Пользователь удален']);
     }
