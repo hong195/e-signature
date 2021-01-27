@@ -27,15 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/signature-card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/ApplicationForm2.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/FileField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/FileField.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/ApplicationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/ApplicationForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/AppBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/AppBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/View.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/View.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +176,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/src/views/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -189,8 +184,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\views\pages" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -211,7 +211,8 @@
       <workItem from="1610565929824" duration="449000" />
       <workItem from="1610948497852" duration="1821000" />
       <workItem from="1611078641318" duration="6794000" />
-      <workItem from="1611122598368" duration="5920000" />
+      <workItem from="1611122598368" duration="6527000" />
+      <workItem from="1611762710384" duration="9487000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -307,10 +308,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="457" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1611087353149" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1611126879679">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1611763653286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611126879679" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611763653286" />
     <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1611087512739">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
