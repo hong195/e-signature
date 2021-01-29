@@ -2,11 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import store from './store'
 import auth from './middleware/auth'
-// import hasPermission from './middleware/hasPermission'
 import middlewarePipeline from './middleware/middlewarePipeline'
-import isAdmin from './middleware/isAdmin'
-import isSubscriber from './middleware/isSubscriber'
-import isEditor from './middleware/isEditor'
+
 Vue.use(Router)
 const router = new Router({
   mode: 'hash',
@@ -14,22 +11,23 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      component: () => import('@/views/pages/Index'),
+      component: () => import('@/views/pages/applicationForm/Index'),
       children: [
         {
-          name: 'create-application',
+          name: 'application-form',
           path: '/',
-          component: () => import('@/views/pages/ApplicationForm'),
+          component: () => import('@/views/pages/applicationForm/Form'),
         },
+      ],
+    },
+    {
+      path: '/',
+      component: () => import('@/views/pages/Index'),
+      children: [
         {
           name: 'login',
           path: 'login',
           component: () => import('@/views/pages/Login'),
-        },
-        {
-          name: 'register',
-          path: 'register',
-          component: () => import('@/views/pages/Register'),
         },
       ],
     },
@@ -59,7 +57,7 @@ const router = new Router({
           component: () => import('@/views/dashboard/pages/staffs/Index'),
           meta: {
             middleware: [
-              isEditor,
+              auth,
             ],
           },
         },
@@ -67,11 +65,6 @@ const router = new Router({
           name: 'create-staff',
           path: 'create-staff',
           component: () => import('@/views/dashboard/pages/staffs/CreateUpdate'),
-          meta: {
-            middleware: [
-              isEditor,
-            ],
-          },
         },
         {
           name: 'update-staff',

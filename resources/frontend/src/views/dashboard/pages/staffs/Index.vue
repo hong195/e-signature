@@ -8,7 +8,7 @@
     >
       <div class="d-flex">
         <v-text-field
-          v-model.lazy="searchParams.name"
+          v-model.lazy="searchParams.qs"
           append-icon="mdi-magnify"
           class="ml-auto mr-3"
           label="Поиск"
@@ -24,40 +24,31 @@
         fetch-url="users"
         :headers="headers"
         :search-options="searchParams"
-      >
-        <template v-slot:item.actions="{ item }">
-          <actions :item="item" @actionDeletedResponse="actionDeletedResponse" />
-        </template>
-      </data-table>
+      />
     </base-material-card>
-    <checks ref="checksDialog" />
   </v-container>
 </template>
 
 <script>
-  import Actions from '@/views/dashboard/components/Actions/StaffActions'
   import DataTable from '@/views/dashboard/components/DataTable'
+
   export default {
     name: 'Staff',
-    components: { Actions, DataTable },
+    components: { DataTable },
     data () {
       return {
         headers: [
           {
             text: 'Имя',
-            value: 'first_name',
+            value: 'name',
           },
           {
             text: 'Фамилия',
-            value: 'last_name',
+            value: 'surname',
           },
           {
-            text: 'Аптека',
-            value: 'pharmacy.name',
-          },
-          {
-            text: 'Роль',
-            value: 'role.name',
+            text: 'Позиция',
+            value: 'position',
           },
           {
             text: 'Электронная почта',
@@ -71,16 +62,11 @@
           },
         ],
         searchParams: {
-          name: '',
+          qs: '',
         },
       }
     },
     methods: {
-      openChecksDialog (id) {
-        this.$refs.checksDialog.dialog = true
-        this.$refs.checksDialog.userId = id
-        this.$refs.checksDialog.fetchUserChecks()
-      },
       actionDeletedResponse (val) {
         this.items.splice(
           this.items.findIndex(({ id }) => id === val),

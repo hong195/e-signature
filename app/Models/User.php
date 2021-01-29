@@ -8,8 +8,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\MediaLibrary\HasMedia\HasMedia;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable implements HasMedia
+
+class User extends Authenticatable implements HasMedia, JWTSubject
 {
     use HasFactory, Notifiable;
     use HasMediaTrait;
@@ -42,6 +44,16 @@ class User extends Authenticatable implements HasMedia
     protected $casts = [
         'import_id' => 'integer'
     ];
+
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    public function getJWTCustomClaims() : array
+    {
+        return [];
+    }
 
     public function department() : BelongsTo
     {

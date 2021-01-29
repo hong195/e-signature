@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/frontend" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/ApplicationForm2.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/e-signature.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-signature.loc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/ApplicationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/ApplicationForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/locales/ar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/plugins/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/plugins/axios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DataTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DataTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/ApplicationForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +38,32 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
-  <component name="EditorConfigPreviewManager">
-    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/resources/frontend/src/views/pages/ApplicationForm.vue" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="frontend" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="b5b81396bb5baf0787760f4ba072c7ac4bf3e81a" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -161,6 +173,19 @@
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-medialibrary" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image" />
+      <path value="$PROJECT_DIR$/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/vendor/spatie/pdf-to-image" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/league/glide" />
+      <path value="$PROJECT_DIR$/vendor/org_heigl/ghostscript" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="ProjectId" id="1n0BMmgsR3x9DyrMB3ij2AdMHq6" />
@@ -176,20 +201,33 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/src/views/pages" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.eslint" value="wsl://UBUNTU2004@/usr/bin/node" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\views\pages" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\frontend" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\app\Http\Controllers" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\1" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\1" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\views\mails" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature.loc\public" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\storage\app\public" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\default" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -206,13 +244,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610517084688</updated>
-      <workItem from="1610517088203" duration="13353000" />
-      <workItem from="1610563163530" duration="2520000" />
-      <workItem from="1610565929824" duration="449000" />
-      <workItem from="1610948497852" duration="1821000" />
-      <workItem from="1611078641318" duration="6794000" />
-      <workItem from="1611122598368" duration="6527000" />
-      <workItem from="1611762710384" duration="9487000" />
+      <workItem from="1610517088203" duration="13686000" />
+      <workItem from="1610556210464" duration="540000" />
+      <workItem from="1610603373318" duration="5033000" />
+      <workItem from="1610688828091" duration="1421000" />
+      <workItem from="1610945305165" duration="19360000" />
+      <workItem from="1611032040240" duration="15152000" />
+      <workItem from="1611119347249" duration="1058000" />
+      <workItem from="1611120789736" duration="36150000" />
+      <workItem from="1611205134615" duration="24946000" />
+      <workItem from="1611293425004" duration="23467000" />
+      <workItem from="1611469466301" duration="12208000" />
+      <workItem from="1611555391119" duration="14381000" />
+      <workItem from="1611607561149" duration="54000" />
+      <workItem from="1611639933997" duration="9582000" />
+      <workItem from="1611669338388" duration="2263000" />
+      <workItem from="1611752076524" duration="605000" />
+      <workItem from="1611834157670" duration="7197000" />
+      <workItem from="1611845080453" duration="5173000" />
+      <workItem from="1611899934242" duration="2934000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -228,28 +278,126 @@
       <option name="project" value="LOCAL" />
       <updated>1610524585452</updated>
     </task>
-    <task id="LOCAL-00003" summary="Created Frontend by copying hr-project)">
-      <created>1610565986932</created>
+    <task id="LOCAL-00003" summary="Db structure &amp;&amp; app models.">
+      <created>1610552642224</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1610565986932</updated>
+      <updated>1610552642224</updated>
     </task>
-    <task id="LOCAL-00004" summary="Added placeholder &amp; hint for Formbase">
-      <created>1611087435354</created>
+    <task id="LOCAL-00004" summary="Added is_active &amp;&amp; has_signature">
+      <created>1610603755768</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1611087435354</updated>
+      <updated>1610603755768</updated>
     </task>
-    <task id="LOCAL-00005" summary="Created Application form">
-      <created>1611087486262</created>
+    <task id="LOCAL-00005" summary="Added Users,Companies,Departments controllers, requests.&#10;&#10;- Updated&#10;  users table&#10;  added department import id column">
+      <created>1610976936525</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1611087486262</updated>
+      <updated>1610976936525</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added login column for users table.">
+      <created>1611040830857</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611040830857</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added department two-way synchronization:&#10;&#10;- Added&#10;  guzzlehttp/guzzle package for backend api requests&#10;  yandex config settings&#10;  yandex service&#10;  api requester based on GuzzleHttp&#10;  department observer&#10;- Updated&#10;  Company, Company settings models">
+      <created>1611041782492</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611041782492</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added department two-way synchronization:&#10;&#10;- Added&#10;  guzzlehttp/guzzle package for backend api requests&#10;  yandex config settings&#10;  yandex service&#10;  api requester based on GuzzleHttp&#10;  department observer&#10;- Updated&#10;  Company, Company settings models">
+      <created>1611041889414</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611041889414</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Yandex service integration.">
+      <created>1611152258784</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611152258784</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated user sync logic:&#10;&#10;- Added&#10;  event UserSaved &amp;&amp; listener UserSavedListener&#10;  split UserRequest into store &amp;&amp; update requests&#10;  SyncInterface&#10;  Password generator&#10;- Updated&#10;  UsersController&#10;  Yandex service &#10;  import id column type&#10;- Removed&#10;  unnecessary abstract layer (Response, Request)">
+      <created>1611233488625</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611233488625</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated department synchronization.">
+      <created>1611242489169</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611242489169</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated users &amp;&amp; department synchronization.">
+      <created>1611301294469</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611301294469</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added welcome mail notification after user registration:&#10;&#10;- Updated&#10;  UsersController store &amp;&amp; update methods.">
+      <created>1611335457333</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611335457333</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added welcome mail notification after user registration:&#10;&#10;- Updated&#10;  UsersController store &amp;&amp; update methods.">
+      <created>1611338247398</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611338247398</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Updated user controller/db/requests:&#10;&#10;- Added&#10;  spatie/media-library package&#10;- Deleted&#10;  contacts table">
+      <created>1611585380993</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611585380993</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added user signature:">
+      <created>1611594989290</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611594989290</updated>
+    </task>
+    <task id="LOCAL-00017" summary="User cannot be deleted.">
+      <created>1611642738392</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611642738392</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added department import.">
+      <created>1611666274014</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611666274014</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added users import.">
+      <created>1611671380798</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611671380799</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,18 +411,7 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/frontend" />
-                      </list>
-                    </value>
-                  </entry>
+                  <entry key="Show.Git.Branches" value="false" />
                 </map>
               </option>
             </State>
@@ -290,39 +427,21 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init commit." />
     <MESSAGE value="Db structure." />
-    <MESSAGE value="Created Frontend by copying hr-project)" />
-    <MESSAGE value="Added placeholder &amp; hint for Formbase" />
-    <MESSAGE value="Created Application form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Application form" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610565737528">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1610565737528" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1611123492776">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1611123492776" />
-    <state x="457" y="43" key="RollbackChangesDialog" timestamp="1611087353149">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="457" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1611087353149" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1611763653286">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611763653286" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1611087512739">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1611087512739" />
-    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611122680031">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1611122680031" />
-    <state x="347" y="73" width="587" height="534" key="find.popup" timestamp="1611085961297">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="347" y="73" width="587" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1611085961297" />
+    <MESSAGE value="Db structure &amp;&amp; app models." />
+    <MESSAGE value="Added is_active &amp;&amp; has_signature" />
+    <MESSAGE value="Added Users,Companies,Departments controllers, requests.&#10;&#10;- Updated&#10;  users table&#10;  added department import id column" />
+    <MESSAGE value="Added login column for users table." />
+    <MESSAGE value="Added department two-way synchronization:&#10;&#10;- Added&#10;  guzzlehttp/guzzle package for backend api requests&#10;  yandex config settings&#10;  yandex service&#10;  api requester based on GuzzleHttp&#10;  department observer&#10;- Updated&#10;  Company, Company settings models" />
+    <MESSAGE value="Yandex service integration." />
+    <MESSAGE value="Updated user sync logic:&#10;&#10;- Added&#10;  event UserSaved &amp;&amp; listener UserSavedListener&#10;  split UserRequest into store &amp;&amp; update requests&#10;  SyncInterface&#10;  Password generator&#10;- Updated&#10;  UsersController&#10;  Yandex service &#10;  import id column type&#10;- Removed&#10;  unnecessary abstract layer (Response, Request)" />
+    <MESSAGE value="Updated department synchronization." />
+    <MESSAGE value="Updated users &amp;&amp; department synchronization." />
+    <MESSAGE value="Added welcome mail notification after user registration:&#10;&#10;- Updated&#10;  UsersController store &amp;&amp; update methods." />
+    <MESSAGE value="Updated user controller/db/requests:&#10;&#10;- Added&#10;  spatie/media-library package&#10;- Deleted&#10;  contacts table" />
+    <MESSAGE value="Added user signature." />
+    <MESSAGE value="User cannot be deleted." />
+    <MESSAGE value="Added department import." />
+    <MESSAGE value="Added users import." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added users import." />
   </component>
 </project>

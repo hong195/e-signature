@@ -119,7 +119,6 @@
               this.$router.push({ name: 'home' })
             })
             .catch(({ response }) => {
-              console.error(response)
               this.message = response.data.error
               this.loading = false
               this.error = true

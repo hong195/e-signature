@@ -100,11 +100,6 @@
         return this.meta.total ? this.meta.total : 0
       },
     },
-    watch: {
-      options (val) {
-        console.log(val)
-      },
-    },
     mounted () {
       this.$watch('searchOptions', this.fetchPosts, {
         deep: true,
