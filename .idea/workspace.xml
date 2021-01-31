@@ -3,31 +3,20 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/e-signature.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-signature.loc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/public/oxymed_ceo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/formLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/placeholder.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/locales/ar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/plugins/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/plugins/axios/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/user/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DataTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DataTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/ApplicationForm.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,17 +190,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.path.for.package.eslint" value="wsl://UBUNTU2004@/usr/bin/node" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -263,6 +252,7 @@
       <workItem from="1611834157670" duration="7197000" />
       <workItem from="1611845080453" duration="5173000" />
       <workItem from="1611899934242" duration="2934000" />
+      <workItem from="1612031146465" duration="1812000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -414,6 +404,17 @@
                   <entry key="Show.Git.Branches" value="false" />
                 </map>
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="saodat" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -443,5 +444,19 @@
     <MESSAGE value="Added department import." />
     <MESSAGE value="Added users import." />
     <option name="LAST_COMMIT_MESSAGE" value="Added users import." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="416" y="78" key="#ESLint" timestamp="1611938268417">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="416" y="78" key="#ESLint/0.0.1280.680@0.0.1280.680" timestamp="1611938268417" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1611938315401">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611938315401" />
+    <state x="347" y="73" width="587" height="534" key="find.popup" timestamp="1611938935893">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="347" y="73" width="587" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1611938935893" />
   </component>
 </project>

@@ -10,6 +10,30 @@
       max-width="768"
       style="margin: auto"
     >
+      <v-img width="100%" contain height="160px" src="@/assets/formLogo.png" />
+    </v-card>
+    <v-card
+      light
+      class="px-5 py-5 my-10"
+      max-width="768"
+      style="margin: auto"
+    >
+      <p style="font-size: 32px;">
+        Форма для создания электронной почты и подписи.
+      </p>
+      <p>
+        Данная форма используется для отправки заявки на создание электронной почты с корпоративной подписью.
+      </p>
+      <p>
+        Когда вы загрузите файлы и отправите форму, мы сохраним ваше имя и фото профиля.
+      </p>
+    </v-card>
+    <v-card
+      light
+      class="px-5 py-5 my-10"
+      max-width="768"
+      style="margin: auto"
+    >
       <v-form>
         <v-row>
           <v-col cols="6">
@@ -120,6 +144,7 @@
             </validation-provider>
           </v-col>
           <v-col cols="12">
+            {{ schema.phone.label }}
             <validation-provider
               v-slot="{ errors }"
               tag="div"
@@ -129,11 +154,20 @@
             >
               <v-text-field
                 v-model="schema.phone.value"
+                v-mask="'## ### ## ##'"
                 :error-messages="errors"
                 :name="schema.phone.name"
                 v-bind="schema.phone.attributes"
-                :label="schema.phone.label"
-              />
+
+                placeholder="-- --- -- --"
+                solo
+                outlined
+                flat
+              >
+                <template slot="prepend-inner" class="inner-text">
+                  +998
+                </template>
+              </v-text-field>
             </validation-provider>
           </v-col>
           <v-col cols="12">
@@ -172,9 +206,11 @@
 <script>
   import { mapGetters } from 'vuex'
   import ApplicationPreview from '@/views/pages/components/ApplicationPreview'
+  import { mask } from 'vue-the-mask'
   export default {
     name: 'CreateUpdate',
     components: { ApplicationPreview },
+    directives: { mask },
     data: () => ({
       departments: [
         { id: 1, name: 'd-1', business_id: 1 },
@@ -245,7 +281,7 @@
           component: 'text',
           name: 'email',
           label:
-            'Укажите Ваш КОРПОРАТИВНЫЙ email. (Если он уже есть)',
+            'Ваш E-mail',
           value: null,
           rule: 'required|email',
           attributes: { outlined: true },
