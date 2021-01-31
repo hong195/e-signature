@@ -9,14 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/frontend/public/oxymed_ceo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/formLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/placeholder.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Drawer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Drawer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/adminItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/adminItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/subscriberItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/subscriberItems.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +250,7 @@
       <workItem from="1611834157670" duration="7197000" />
       <workItem from="1611845080453" duration="5173000" />
       <workItem from="1611899934242" duration="2934000" />
-      <workItem from="1612031146465" duration="1812000" />
+      <workItem from="1612031146465" duration="3235000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
