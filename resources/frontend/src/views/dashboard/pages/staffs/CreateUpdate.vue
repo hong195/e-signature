@@ -31,12 +31,12 @@
       isUpdate () {
         return !!this.$route.params.id
       },
-      redirectUrl () {
-        if (this.currentUser.role.id === 2) {
-          return 'home'
-        }
-        return 'staff'
-      },
+      // redirectUrl () {
+      //   if (this.currentUser.role.id === 2) {
+      //     return 'home'
+      //   }
+      //   return 'staff'
+      // },
     },
   }
 </script>

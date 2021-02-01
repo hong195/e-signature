@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Enums\UserStatus;
 use App\Events\UserCreated;
 use App\Events\UserUpdated;
+use App\Forms\UserForm;
 use App\Http\Requests\UserStoreRequest;
 use App\Http\Requests\UserUpdateRequest;
 use App\Http\Resources\UserResource;
@@ -35,9 +36,9 @@ class UsersController extends Controller
         return UserResource::collection($users);
     }
 
-    public function create()
+    public function create(UserForm $form)
     {
-
+        return response()->json(['form' => $form->get()]);
     }
 
     public function store(UserStoreRequest $request, User $user): \Illuminate\Http\JsonResponse

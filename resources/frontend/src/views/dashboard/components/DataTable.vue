@@ -1,6 +1,6 @@
 <template>
   <v-data-table
-    :items="items"
+    :items="$store.getters[getter]"
     :headers="headers"
     :loading="loading"
     :server-items-length="total"
@@ -85,6 +85,12 @@
         type: [Object, FormData],
         default: () => ({}),
       },
+      mutation: {
+        type: String,
+      },
+      getter: {
+        type: String,
+      },
     },
     data: () => ({
       items: [],
@@ -133,6 +139,7 @@
               el.expanded = false
               this.items.push(el)
             })
+            this.$store.commit(this.mutation, this.items)
             this.meta = data.meta
             this.loading = false
           })

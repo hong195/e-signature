@@ -7,10 +7,11 @@
             <td width="130" style="padding-right: 15px;">
               <p>
                 <img width="120"
+                     height="120"
                      style="border-radius: 50%;
                border-width: 5px;
                border-color:#004b9e;
-               border-style: solid;"
+               border-style: solid; object-fit: cover"
                      :src="checkValue(url, 'https://via.placeholder.com/400')" alt=""
                 >
               </p>
@@ -45,22 +46,22 @@
 
               <p style="margin-top: 5px; margin-bottom: 5px; font-size: 12px; font-family: Arial, sans-serif">
                 <a href="tel:+998 90 908 10 08" style="text-decoration: none; color: #000;">
-                  <img width="13px" src="https://oxymed.uz/uploads/card/oxymed/phone_b.png" alt=""> {{ '+998 '+checkValue(schema.phone.value, '90 123 45 67') }}</a>
+                  <img width="13px" src="https://oxymed.uz/uploads/card/oxymed/phone_b.png" alt=""> {{ '+998 '+checkValue(schema.phone.value.length === 12 ? schema.phone.value : null, '90 123 45 67') }}</a>
               </p>
-              <!--              <p style="margin-top: 5px; margin-bottom: 5px; font-size: 12px; color: #000; font-family: Arial, sans-serif">-->
-              <!--                <a href="http://t.me/ceo_oxymed" style="text-decoration: none; color: #000;">-->
-              <!--                  <img width="13px"-->
-              <!--                       src="https://oxymed.uz/uploads/card/oxymed/telegram_b.png"-->
-              <!--                       alt=""-->
-              <!--                  > +998 90 908-10-08</a>-->
-              <!--              </p>-->
+              <p style="margin-top: 5px; margin-bottom: 5px; font-size: 12px; color: #000; font-family: Arial, sans-serif">
+                <a href="http://t.me/ceo_oxymed" style="text-decoration: none; color: #000;">
+                  <img width="13px"
+                       src="https://oxymed.uz/uploads/card/oxymed/telegram_b.png"
+                       alt=""
+                  > {{ '+998 '+checkValue(schema.phone.value.length === 12 ? schema.phone.value : null, '90 123 45 67') }}</a>
+              </p>
 
               <p style="margin-top: 5px; margin-bottom: 5px; font-size: 12px; color: #000; font-family: Arial, sans-serif">
                 <a href="mailto:aziza.hudayberdieva@oxymed.uz" style="text-decoration: none; color: #000;">
                   <img width="13px"
                        src="https://oxymed.uz/uploads/card/oxymed/mail_b.png"
                        alt=""
-                  >                   {{ checkValue(schema.email.value, 'example@gmail.com') }}</a>
+                  >                   {{ checkEmail(schema.email.value, 'example@gmail.com') }}</a>
               </p>
               <p style="margin-top: 5px; margin-bottom: 5px; font-size: 12px; color: #000; font-family: Arial, sans-serif">
                 <a href="https://www.oxymed.uz" style="text-decoration: none; color: #000;">
@@ -95,6 +96,11 @@
       },
     },
     methods: {
+      checkEmail (v, sample) {
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(v)) {
+          return v
+        } else { return sample }
+      },
       checkValue (val, sample) {
         if (val) { return val } else return sample
       },
