@@ -6,9 +6,9 @@
     class="mt-3"
   >
     <default-form :base-url="baseUrl"
-                  next-route-name="staff"
-                  title-create="Добавить сотрудника"
-                  title-update="Редактировать информацию о персонале "
+                  next-route-name="department"
+                  title-create="Добавить отдел"
+                  title-update="Редактировать отдел"
     />
   </v-container>
 </template>
@@ -23,12 +23,7 @@
     data: () => ({
       schema: [],
       formValue: null,
-      baseUrl: 'users',
+      baseUrl: 'departments',
     }),
-    computed: {
-      isUpdate () {
-        return !!this.$route.params.id
-      },
-    },
   }
 </script>

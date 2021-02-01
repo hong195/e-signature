@@ -21,40 +21,33 @@
       <v-divider class="mt-3" />
       <data-table
         ref="data-table"
-        fetch-url="users"
+        fetch-url="companies"
         :headers="headers"
         :search-options="searchParams"
-        mutation="setUsers"
-        getter="users"
-      />
+        mutation="setCompanies"
+        getter="companies"
+      >
+        <template v-slot:item.actions="{ item }">
+          <actions next-route="update-company" fetch-url="companies" :item="item" @actionDeletedResponse="actionDeletedResponse" />
+        </template>
+      </data-table>
     </base-material-card>
   </v-container>
 </template>
 
 <script>
   import DataTable from '@/views/dashboard/components/DataTable'
+  import Actions from '@/views/dashboard/components/Actions'
 
   export default {
-    name: 'Staff',
-    components: { DataTable },
+    name: 'Companies',
+    components: { Actions, DataTable },
     data () {
       return {
         headers: [
           {
-            text: 'Имя',
+            text: 'Компания',
             value: 'name',
-          },
-          {
-            text: 'Фамилия',
-            value: 'surname',
-          },
-          {
-            text: 'Позиция',
-            value: 'position',
-          },
-          {
-            text: 'Электронная почта',
-            value: 'email',
           },
           {
             sortable: false,

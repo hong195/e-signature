@@ -43,4 +43,21 @@ export default [
       },
     ],
   },
+  {
+    icon: 'mdi-application',
+    title: 'Департамент',
+    group: '',
+    children: [
+      {
+        to: 'department',
+        avatar: 'mdi-view-comfy',
+        title: 'Департамент',
+      },
+      {
+        to: 'create-department',
+        avatar: 'mdi-clipboard-outline',
+        title: 'Создать Департамент',
+      },
+    ],
+  },
 ]

@@ -11,7 +11,8 @@
                      style="border-radius: 50%;
                border-width: 5px;
                border-color:#004b9e;
-               border-style: solid; object-fit: cover"
+               border-style: solid;
+               object-fit: cover"
                      :src="checkValue(url, 'https://via.placeholder.com/400')" alt=""
                 >
               </p>

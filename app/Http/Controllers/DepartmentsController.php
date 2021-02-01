@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Forms\DepartmentForm;
 use App\Http\Requests\DepartmentRequest;
 use App\Http\Resources\DeparmentResource;
 use App\Models\Department;
@@ -9,14 +10,20 @@ use Illuminate\Http\Request;
 
 class DepartmentsController extends Controller
 {
-    public function index()
+    public function index(Request $request): \Illuminate\Http\Resources\Json\AnonymousResourceCollection
     {
-        //
+        $perPage = $request->get('perPage', 15);
+        $page = $request->get('page', 1);
+
+        $data =  Department::query()
+            ->paginate($perPage, $columns = ['*'], $pageName = 'page', $page);
+
+        return DeparmentResource::collection($data);
     }
 
-    public function create()
+    public function create(DepartmentForm $form)
     {
-        //
+        return response()->json(['form' => $form->get()]);
     }
 
     public function store(DepartmentRequest $request, Department $department): \Illuminate\Http\JsonResponse

@@ -76,6 +76,56 @@ const router = new Router({
             ],
           },
         },
+        {
+          name: 'department',
+          path: 'department',
+          component: () => import('@/views/dashboard/pages/departments/Index'),
+          meta: {
+            middleware: [
+              auth,
+            ],
+          },
+        },
+        {
+          name: 'create-department',
+          path: 'create-department',
+          component: () => import('@/views/dashboard/pages/departments/CreateUpdate'),
+        },
+        {
+          name: 'update-department',
+          path: 'update-department/:id',
+          component: () => import('@/views/dashboard/pages/departments/CreateUpdate'),
+          meta: {
+            middleware: [
+              auth,
+            ],
+          },
+        },
+        {
+          name: 'company',
+          path: 'company',
+          component: () => import('@/views/dashboard/pages/companies/Index'),
+          meta: {
+            middleware: [
+              auth,
+            ],
+          },
+        },
+        {
+          name: 'create-company',
+          path: 'create-company',
+          component: () => import('@/views/dashboard/pages/companies/CreateUpdate'),
+        },
+        {
+          name: 'update-company',
+          path: 'update-company/:id',
+          component: () => import('@/views/dashboard/pages/companies/CreateUpdate'),
+          meta: {
+            middleware: [
+              auth,
+            ],
+          },
+        },
       ],
     },
     {

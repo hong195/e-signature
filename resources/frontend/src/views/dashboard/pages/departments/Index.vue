@@ -21,11 +21,11 @@
       <v-divider class="mt-3" />
       <data-table
         ref="data-table"
-        fetch-url="users"
+        fetch-url="departments"
         :headers="headers"
         :search-options="searchParams"
-        mutation="setUsers"
-        getter="users"
+        mutation="setDepartments"
+        getter="departments"
       />
     </base-material-card>
   </v-container>
@@ -35,26 +35,14 @@
   import DataTable from '@/views/dashboard/components/DataTable'
 
   export default {
-    name: 'Staff',
+    name: 'Departments',
     components: { DataTable },
     data () {
       return {
         headers: [
           {
-            text: 'Имя',
+            text: 'Департамент',
             value: 'name',
-          },
-          {
-            text: 'Фамилия',
-            value: 'surname',
-          },
-          {
-            text: 'Позиция',
-            value: 'position',
-          },
-          {
-            text: 'Электронная почта',
-            value: 'email',
           },
           {
             sortable: false,

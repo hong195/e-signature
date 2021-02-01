@@ -9,21 +9,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Forms/AbstractForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Forms/UserForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/departments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/e-signature.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-signature.loc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Forms/CompanyForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Forms/DepartmentForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/AbstractRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/CompanyRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Contracts/BaseEloquentRepositoryContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/companies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/Actions.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/companies/CreateUpdate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/companies/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/departments/CreateUpdate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/departments/Index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Forms/UserForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Forms/UserForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DataTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DataTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/adminItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/adminItems.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/CreateUpdate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/CreateUpdate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +206,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories/Contracts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -215,19 +220,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\frontend" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\app\Http\Controllers" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\1" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\1" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\views\mails" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\e-signature.loc\public" />
       <recent name="C:\OpenServer\domains\e-signature.loc\storage\app\public" />
       <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\default" />
       <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons" />
       <recent name="C:\OpenServer\domains\e-signature.loc\resources\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature\app\Repositories\Contracts" />
+      <recent name="C:\OpenServer\domains\e-signature\app\Repositories" />
+      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\views\dashboard\components" />
+      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\store_modules" />
+      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\views\dashboard\pages\companies" />
     </key>
   </component>
   <component name="RunManager">
@@ -263,7 +268,7 @@
       <workItem from="1611834157670" duration="7197000" />
       <workItem from="1611845080453" duration="5173000" />
       <workItem from="1611899934242" duration="2934000" />
-      <workItem from="1612031146465" duration="8206000" />
+      <workItem from="1612031146465" duration="12686000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -405,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612071629020</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Form validation&#10;Laravel formbase package installed&#10;Created store for users">
+      <created>1612158612016</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1612158612016</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,17 +474,18 @@
     <MESSAGE value="Added department import." />
     <MESSAGE value="Added users import." />
     <MESSAGE value="Admin menu created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin menu created" />
+    <MESSAGE value="Form validation&#10;Laravel formbase package installed&#10;Created store for users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Form validation&#10;Laravel formbase package installed&#10;Created store for users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="78" key="#ESLint" timestamp="1611938268417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="416" y="78" key="#ESLint/0.0.1280.680@0.0.1280.680" timestamp="1611938268417" />
-    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612076293997">
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612175386106">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1612076293997" />
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1612175386106" />
     <state x="418" y="253" width="444" height="238" key="ComposerInitDialogKey" timestamp="1612076169051">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -481,10 +494,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611938315401" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612071632002">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612158613882">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612071632002" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612158613882" />
     <state x="347" y="73" width="587" height="534" key="find.popup" timestamp="1611938935893">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

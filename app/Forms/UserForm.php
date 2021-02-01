@@ -2,6 +2,7 @@
 
 namespace App\Forms;
 
+use App\Models\Department;
 use App\Models\User;
 use Saodat\FormBase\Contracts\FormBuilderInterface;
 
@@ -35,7 +36,7 @@ class UserForm extends AbstractForm
                 [
                     'attributes' => ['outlined' => true, "cols" => 12],
                     'validationRule' => 'required',
-                    'options' => array('id' => 1, 'name'=> 'a-1')
+                    'options' => $this->getDepartments()
                 ]);
 
         $this->formBuilder
@@ -76,6 +77,15 @@ class UserForm extends AbstractForm
                 ]
             );
 
+    }
+    protected function getDepartments()
+    {
+        $data = Department::all();
+        $data = $data->map(function ($item) {
+            return ['id' => $item->id, 'name' => $item->name];
+        })->toArray();
+
+        return $data;
     }
 
     public function fill(User $user)
