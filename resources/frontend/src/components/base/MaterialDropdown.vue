@@ -39,7 +39,7 @@
 </template>
 
 <script>
-  // Mixins
+  // mixins
   import Proxyable from 'vuetify/lib/mixins/proxyable'
 
   export default {

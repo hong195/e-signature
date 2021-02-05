@@ -9,61 +9,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions/StaffActions.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/DataTable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/DefaultForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/AppBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Drawer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Settings.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/View.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/sidebarMenuItems/adminItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/sidebarMenuItems/editorItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/sidebarMenuItems/subscriberItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/ApplicationPreview.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/Btn.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/Heading.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/core/AppBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/core/Footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/core/View.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/companies/CreateUpdate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/companies/Index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/departments/CreateUpdate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/departments/Index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/CreateUpdate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/Detail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/Actions.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/Actions/StaffActions.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DataTable.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DefaultForm.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/AppBar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Drawer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Settings.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/View.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/adminItems.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/editorItems.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/subscriberItems.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/companies/CreateUpdate.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/companies/Index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/departments/CreateUpdate.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/departments/Index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/CreateUpdate.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Detail.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/Btn.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/Heading.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/AppBar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/Footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/View.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/CheckboxField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/CheckboxField.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/DateField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/DateField.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/FileField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/FileField.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/RadioField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/RadioField.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/SelectField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/SelectField.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/TextField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/TextField.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/TextareaField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/TextareaField.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/TreeselectField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/TreeselectField.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/FormBase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/FormBase.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Mixins/FieldMixin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/mixins/FieldMixin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Mixins/FormActionsMixin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/mixins/FormActionsMixin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialDropdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialTabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialTabs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialWizard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialWizard.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,19 +213,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\e-signature.loc\public" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\storage\app\public" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\default" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\e-signature\app\Repositories\Contracts" />
       <recent name="C:\OpenServer\domains\e-signature\app\Repositories" />
       <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\views\dashboard\components" />
       <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\store_modules" />
       <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\views\dashboard\pages\companies" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\components\dashboard\staffs" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\public" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\storage\app\public" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\default" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons" />
     </key>
   </component>
   <component name="RunManager">
@@ -304,7 +263,7 @@
       <workItem from="1611899934242" duration="2934000" />
       <workItem from="1612031146465" duration="14259000" />
       <workItem from="1612452507527" duration="3746000" />
-      <workItem from="1612509090917" duration="276000" />
+      <workItem from="1612509090917" duration="639000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -460,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612175835525</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="changed folder structure">
+      <created>1612509634115</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1612509634115</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +485,8 @@
     <MESSAGE value="Admin menu created" />
     <MESSAGE value="Form validation&#10;Laravel formbase package installed&#10;Created store for users" />
     <MESSAGE value="Department, Company create and update forms, lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="Department, Company create and update forms, lists" />
+    <MESSAGE value="changed folder structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed folder structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="78" key="#ESLint" timestamp="1611938268417">
@@ -538,9 +505,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611938315401" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612175839060">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612509639784">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1612509639784" />
     <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612175839060" />
     <state x="347" y="73" width="587" height="534" key="find.popup" timestamp="1611938935893">
       <screen x="0" y="0" width="1280" height="680" />

@@ -19,8 +19,8 @@
         <v-img v-if="item.type.includes('image')" height="100" contain :src="url" />
 
         <v-icon
-          dark
           v-else
+          dark
         >
           {{ getIcon(key).icon }}
         </v-icon>
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-  import FieldMixin from '@/components/Form/Mixins/FieldMixin'
+  import FieldMixin from '@/components/form/mixins/FieldMixin'
 
   export default {
     name: 'FileField',

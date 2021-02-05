@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import FieldMixin from '@/components/Form/Mixins/FieldMixin'
+  import FieldMixin from '@/components/form/mixins/FieldMixin'
 
   export default {
     name: 'TextArea',
