@@ -4,18 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
-    <expand />
-    <select />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:saodat" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/DefaultForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/DefaultForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Settings.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/layouts/DashboardIndex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/layouts/PagesIndex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Forms/UserForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Forms/UserForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/AbstractRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/CompanyRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Contracts/BaseEloquentRepositoryContract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions/StaffActions.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/companies/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/companies/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/departments/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/departments/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/Index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,19 +232,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\components\dashboard\staffs" />
+      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\layouts" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\public" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\storage\app\public" />
+      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\default" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\e-signature\app\Repositories\Contracts" />
       <recent name="C:\OpenServer\domains\e-signature\app\Repositories" />
       <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\views\dashboard\components" />
       <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\store_modules" />
       <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\views\dashboard\pages\companies" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\layouts" />
-      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\components\dashboard\staffs" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\public" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\storage\app\public" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\default" />
     </key>
   </component>
   <component name="RunManager">
@@ -440,7 +466,7 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
               <option name="FILTERS">
@@ -494,9 +520,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="416" y="78" key="#ESLint/0.0.1280.680@0.0.1280.680" timestamp="1611938268417" />
-    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612175386106">
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612523386923">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1612523386923" />
     <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1612175386106" />
     <state x="418" y="253" width="444" height="238" key="ComposerInitDialogKey" timestamp="1612076169051">
       <screen x="0" y="0" width="1280" height="680" />

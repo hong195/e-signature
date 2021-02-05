@@ -18,15 +18,15 @@
               Ф.И.О
             </td>
             <td>
-              {{ item.last_name }} {{ item.first_name }} {{ item.patronymic }}
+              {{ item.name }} {{ item.surname }}
             </td>
           </tr>
           <tr>
             <td>
-              Аптека
+              Должность
             </td>
             <td>
-              {{ item.pharmacy ? item.pharmacy.name : '' }}
+              {{ item.position }}
             </td>
           </tr>
           <tr>
@@ -39,20 +39,10 @@
           </tr>
           <tr>
             <td>
-              Роль
+              Номер телефона
             </td>
             <td>
-              {{ item.role.name }}
-            </td>
-          </tr>
-          <tr v-if="item.meta && item.meta.length">
-            <td>
-              Дополнительно
-            </td>
-            <td>
-              <div v-for="meta in item.meta" :key="meta.name">
-                <span class="meta">{{ $t(meta.name) }}:</span> {{ meta.value }}
-              </div>
+              {{ item.phone }}
             </td>
           </tr>
         </table>

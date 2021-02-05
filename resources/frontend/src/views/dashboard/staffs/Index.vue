@@ -26,17 +26,28 @@
         :search-options="searchParams"
         mutation="setUsers"
         getter="users"
-      />
+      >
+        <template v-slot:item.actions="{ item }">
+          <actions
+            next-route="update-staff"
+            fetch-url="staffs"
+            :item="item"
+            mutation="setUsers"
+            getter="users"
+          />
+        </template>
+      </data-table>
     </base-material-card>
   </v-container>
 </template>
 
 <script>
   import DataTable from '@/components/dashboard/DataTable'
+  import Actions from '@/components/dashboard/staffs/Actions'
 
   export default {
     name: 'Staff',
-    components: { DataTable },
+    components: { DataTable, Actions },
     data () {
       return {
         headers: [
@@ -67,14 +78,6 @@
           qs: '',
         },
       }
-    },
-    methods: {
-      actionDeletedResponse (val) {
-        this.items.splice(
-          this.items.findIndex(({ id }) => id === val),
-          1,
-        )
-      },
     },
   }
 </script>

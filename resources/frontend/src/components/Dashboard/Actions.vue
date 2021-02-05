@@ -34,6 +34,12 @@
         type: Object,
         default: () => ({}),
       },
+      mutation: {
+        type: String,
+      },
+      getter: {
+        type: String,
+      },
     },
     data () {
       return {
@@ -68,7 +74,12 @@
         this.$http
           .delete(`${this.fetchUrl}/${this.item.id}`)
           .then((response) => {
-            this.$emit('actionDeletedResponse', this.item.id)
+            const items = this.$store.getters[this.getter]
+            items.splice(
+              items.findIndex(({ id }) => id === this.item.id),
+              1,
+            )
+            this.$store.commit(this.mutation, items)
             this.$store.commit('successMessage', response.data.message)
           })
           .catch(error => {

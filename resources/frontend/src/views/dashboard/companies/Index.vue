@@ -28,7 +28,13 @@
         getter="companies"
       >
         <template v-slot:item.actions="{ item }">
-          <actions next-route="update-company" fetch-url="companies" :item="item" @actionDeletedResponse="actionDeletedResponse" />
+          <actions
+            next-route="update-company"
+            fetch-url="companies"
+            :item="item"
+            mutation="setCompanies"
+            getter="companies"
+          />
         </template>
       </data-table>
     </base-material-card>
@@ -60,14 +66,6 @@
           qs: '',
         },
       }
-    },
-    methods: {
-      actionDeletedResponse (val) {
-        this.items.splice(
-          this.items.findIndex(({ id }) => id === val),
-          1,
-        )
-      },
     },
   }
 </script>

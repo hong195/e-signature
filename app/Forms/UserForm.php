@@ -90,18 +90,13 @@ class UserForm extends AbstractForm
 
     public function fill(User $user)
     {
-        $user = $user->load(['meta', 'pharmacy', 'roles']);
 
         foreach ($this->formBuilder->getFields() as $field) {
             $value = null;
-            $userMeta = $user->meta->toArray();
-
-
 
             if ($user->{$field->getName()} && $field->getName() !== 'password') {
                 $value = $user->{$field->getName()};
             }
-
 
             $field->setValue($value);
         }

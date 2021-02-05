@@ -38,9 +38,11 @@ class DepartmentsController extends Controller
         return DeparmentResource::make($department);
     }
 
-    public function edit($id)
+    public function edit(DepartmentForm $form, int $id)
     {
-        //
+        $attr = Department::find($id);
+
+        return response()->json(['form' => $form->fill($attr)->get()]);
     }
 
     public function update(DepartmentRequest $request, Department $department): \Illuminate\Http\JsonResponse

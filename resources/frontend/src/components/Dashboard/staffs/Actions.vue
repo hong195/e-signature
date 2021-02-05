@@ -3,7 +3,6 @@
     <v-btn
       v-for="(action, i) in actions"
       :key="i"
-      v-can="action.can"
       dark
       class="px-2 ml-1"
       :color="action.color"
@@ -18,19 +17,25 @@
 </template>
 
 <script>
-  import can from '@/plugins/directives/v-can'
+  // import can from '@/plugins/directives/v-can'
 
-  import StaffDetail from '@/views/dashboard/pages/staffs/Detail'
+  import StaffDetail from '@/components/dashboard/staffs/Detail'
   export default {
     name: 'Actions',
-    directives: {
-      can,
-    },
+    // directives: {
+    //   can,
+    // },
     components: { StaffDetail },
     props: {
       item: {
         type: Object,
         default: () => ({}),
+      },
+      mutation: {
+        type: String,
+      },
+      getter: {
+        type: String,
       },
     },
     data () {
@@ -76,7 +81,12 @@
         this.$http
           .delete(`users/${this.item.id}`)
           .then((response) => {
-            this.$emit('actionDeletedResponse', this.item.id)
+            const items = this.$store.getters[this.getter]
+            items.splice(
+              items.findIndex(({ id }) => id === this.item.id),
+              1,
+            )
+            this.$store.commit(this.mutation, items)
             this.$store.commit('successMessage', response.data.message)
           })
           .catch(error => {

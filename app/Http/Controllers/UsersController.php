@@ -57,9 +57,11 @@ class UsersController extends Controller
         return UserResource::make($user);
     }
 
-    public function edit($id)
+    public function edit(UserForm $form, int $id)
     {
-        //
+        $attr = User::find($id);
+
+        return response()->json(['form' => $form->fill($attr)->get()]);
     }
 
     public function update(UserUpdateRequest $request, User $user): \Illuminate\Http\JsonResponse

@@ -26,16 +26,28 @@
         :search-options="searchParams"
         mutation="setDepartments"
         getter="departments"
-      />
+      >
+        <template v-slot:item.actions="{ item }">
+          <actions
+            next-route="update-department"
+            fetch-url="departments"
+            :item="item"
+            mutation="setDepartments"
+            getter="departments"
+          />
+        </template>
+      </data-table>
     </base-material-card>
   </v-container>
 </template>
 
 <script>
   import DataTable from '@/components/dashboard/DataTable'
+  import Actions from '@/components/dashboard/Actions'
+
   export default {
     name: 'Departments',
-    components: { DataTable },
+    components: { DataTable, Actions },
     data () {
       return {
         headers: [
@@ -54,14 +66,6 @@
           qs: '',
         },
       }
-    },
-    methods: {
-      actionDeletedResponse (val) {
-        this.items.splice(
-          this.items.findIndex(({ id }) => id === val),
-          1,
-        )
-      },
     },
   }
 </script>

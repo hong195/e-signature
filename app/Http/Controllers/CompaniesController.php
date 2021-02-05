@@ -6,20 +6,11 @@ use App\Forms\CompanyForm;
 use App\Http\Requests\CompanyRequest;
 use App\Http\Resources\CompanyResource;
 use App\Models\Company;
-use App\Repositories\CompanyRepository;
 use Illuminate\Http\Request;
 
 class CompaniesController extends Controller
 {
-    /**
-     * @var CompanyRepository
-     */
-    private $companyRepository;
 
-    public function __construct(CompanyRepository $companyRepository)
-    {
-        $this->companyRepository = $companyRepository;
-    }
     public function index(Request $request): \Illuminate\Http\Resources\Json\AnonymousResourceCollection
     {
         $perPage = $request->get('perPage', 15);
@@ -50,7 +41,7 @@ class CompaniesController extends Controller
 
     public function edit(CompanyForm $form, int $id)
     {
-        $attr = $this->companyRepository->findById($id);
+        $attr = Company::find($id);
 
         return response()->json(['form' => $form->fill($attr)->get()]);
     }
