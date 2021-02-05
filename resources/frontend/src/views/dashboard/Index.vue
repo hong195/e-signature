@@ -15,9 +15,9 @@
     name: 'DashboardIndex',
 
     components: {
-      DashboardCoreAppBar: () => import('./components/core/AppBar'),
-      DashboardCoreDrawer: () => import('./components/core/Drawer'),
-      DashboardCoreView: () => import('./components/core/View'),
+      DashboardCoreAppBar: () => import('@/components/dashboard/core/AppBar'),
+      DashboardCoreDrawer: () => import('@/components/dashboard/core/Drawer'),
+      DashboardCoreView: () => import('@/components/dashboard/core/View'),
     },
 
     data: () => ({

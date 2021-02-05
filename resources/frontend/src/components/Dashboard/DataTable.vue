@@ -116,6 +116,8 @@
         immediate: false,
       })
     },
+    // у гас есть экшены
+    // запрос axios
     methods: {
       fetchPosts () {
         this.loading = true
@@ -124,7 +126,6 @@
           itemsPerPage = 10,
           sortBy = null,
         } = this.options
-
         this.$http.get(this.fetchUrl, {
           params: {
             ...this.searchOptions,

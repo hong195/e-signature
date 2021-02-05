@@ -21,27 +21,32 @@
       <v-divider class="mt-3" />
       <data-table
         ref="data-table"
-        fetch-url="departments"
+        fetch-url="companies"
         :headers="headers"
         :search-options="searchParams"
-        mutation="setDepartments"
-        getter="departments"
-      />
+        mutation="setCompanies"
+        getter="companies"
+      >
+        <template v-slot:item.actions="{ item }">
+          <actions next-route="update-company" fetch-url="companies" :item="item" @actionDeletedResponse="actionDeletedResponse" />
+        </template>
+      </data-table>
     </base-material-card>
   </v-container>
 </template>
 
 <script>
-  import DataTable from '@/views/dashboard/components/DataTable'
+  import DataTable from '@/components/dashboard/DataTable'
+  import Actions from '@/components/dashboard/Actions'
 
   export default {
-    name: 'Departments',
-    components: { DataTable },
+    name: 'Companies',
+    components: { Actions, DataTable },
     data () {
       return {
         headers: [
           {
-            text: 'Департамент',
+            text: 'Компания',
             value: 'name',
           },
           {

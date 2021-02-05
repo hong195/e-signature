@@ -9,27 +9,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Forms/CompanyForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Forms/DepartmentForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/AbstractRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/CompanyRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Contracts/BaseEloquentRepositoryContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/store_modules/companies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/Actions.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/companies/CreateUpdate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/companies/Index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/departments/CreateUpdate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/departments/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions/StaffActions.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/DataTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/DefaultForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/AppBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Drawer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Footer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Settings.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/View.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/sidebarMenuItems/adminItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/sidebarMenuItems/editorItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/sidebarMenuItems/subscriberItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/ApplicationPreview.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/Btn.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/Heading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/core/AppBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/core/Footer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/components/Pages/core/View.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/companies/CreateUpdate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/companies/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/departments/CreateUpdate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/departments/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/CreateUpdate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/Detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/Index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Forms/UserForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Forms/UserForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/adminItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/adminItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/CreateUpdate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/CreateUpdate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/Actions.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/Actions/StaffActions.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DataTable.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/DefaultForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/AppBar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Drawer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Footer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/Settings.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/View.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/adminItems.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/editorItems.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/components/core/sidebarMenuItems/subscriberItems.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/companies/CreateUpdate.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/companies/Index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/departments/CreateUpdate.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/departments/Index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/CreateUpdate.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Detail.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/pages/staffs/Index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/ApplicationPreview.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/Btn.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/Heading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/AppBar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/Footer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/components/core/View.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +302,9 @@
       <workItem from="1611834157670" duration="7197000" />
       <workItem from="1611845080453" duration="5173000" />
       <workItem from="1611899934242" duration="2934000" />
-      <workItem from="1612031146465" duration="12686000" />
+      <workItem from="1612031146465" duration="14259000" />
+      <workItem from="1612452507527" duration="3746000" />
+      <workItem from="1612509090917" duration="276000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -417,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612158612016</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Department, Company create and update forms, lists">
+      <created>1612175835525</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1612175835525</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +518,8 @@
     <MESSAGE value="Added users import." />
     <MESSAGE value="Admin menu created" />
     <MESSAGE value="Form validation&#10;Laravel formbase package installed&#10;Created store for users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Form validation&#10;Laravel formbase package installed&#10;Created store for users" />
+    <MESSAGE value="Department, Company create and update forms, lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="Department, Company create and update forms, lists" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="78" key="#ESLint" timestamp="1611938268417">
@@ -494,10 +538,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611938315401" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612158613882">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612175839060">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612158613882" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612175839060" />
     <state x="347" y="73" width="587" height="534" key="find.popup" timestamp="1611938935893">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

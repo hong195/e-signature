@@ -32,7 +32,7 @@
 </template>
 
 <script>
-  import DataTable from '@/views/dashboard/components/DataTable'
+  import DataTable from '@/components/dashboard/DataTable'
 
   export default {
     name: 'Staff',

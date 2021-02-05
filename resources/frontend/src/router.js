@@ -54,7 +54,7 @@ const router = new Router({
         {
           name: 'staff',
           path: 'staff',
-          component: () => import('@/views/dashboard/pages/staffs/Index'),
+          component: () => import('@/views/dashboard/staffs/Index'),
           meta: {
             middleware: [
               auth,
@@ -64,12 +64,12 @@ const router = new Router({
         {
           name: 'create-staff',
           path: 'create-staff',
-          component: () => import('@/views/dashboard/pages/staffs/CreateUpdate'),
+          component: () => import('@/views/dashboard/staffs/CreateUpdate'),
         },
         {
           name: 'update-staff',
           path: 'update-staff/:id',
-          component: () => import('@/views/dashboard/pages/staffs/CreateUpdate'),
+          component: () => import('@/views/dashboard/staffs/CreateUpdate'),
           meta: {
             middleware: [
               auth,
@@ -79,7 +79,7 @@ const router = new Router({
         {
           name: 'department',
           path: 'department',
-          component: () => import('@/views/dashboard/pages/departments/Index'),
+          component: () => import('@/views/dashboard/departments/Index'),
           meta: {
             middleware: [
               auth,
@@ -89,12 +89,12 @@ const router = new Router({
         {
           name: 'create-department',
           path: 'create-department',
-          component: () => import('@/views/dashboard/pages/departments/CreateUpdate'),
+          component: () => import('@/views/dashboard/departments/CreateUpdate'),
         },
         {
           name: 'update-department',
           path: 'update-department/:id',
-          component: () => import('@/views/dashboard/pages/departments/CreateUpdate'),
+          component: () => import('@/views/dashboard/departments/CreateUpdate'),
           meta: {
             middleware: [
               auth,
@@ -104,7 +104,7 @@ const router = new Router({
         {
           name: 'company',
           path: 'company',
-          component: () => import('@/views/dashboard/pages/companies/Index'),
+          component: () => import('@/views/dashboard/companies/Index'),
           meta: {
             middleware: [
               auth,
@@ -114,12 +114,12 @@ const router = new Router({
         {
           name: 'create-company',
           path: 'create-company',
-          component: () => import('@/views/dashboard/pages/companies/CreateUpdate'),
+          component: () => import('@/views/dashboard/companies/CreateUpdate'),
         },
         {
           name: 'update-company',
           path: 'update-company/:id',
-          component: () => import('@/views/dashboard/pages/companies/CreateUpdate'),
+          component: () => import('@/views/dashboard/companies/CreateUpdate'),
           meta: {
             middleware: [
               auth,

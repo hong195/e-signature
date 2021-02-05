@@ -207,7 +207,7 @@
 <script>
   import { mapGetters } from 'vuex'
   import { ValidationObserver } from 'vee-validate'
-  import ApplicationPreview from '@/views/pages/components/ApplicationPreview'
+  import ApplicationPreview from '@/components/pages/ApplicationPreview'
   import { mask } from 'vue-the-mask'
   export default {
     name: 'CreateUpdate',

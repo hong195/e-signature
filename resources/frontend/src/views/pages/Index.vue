@@ -6,13 +6,13 @@
 </template>
 
 <script>
-  import PagesCoreAppBar from '@/views/pages/components/core/AppBar'
+  import PagesCoreAppBar from '@/components/pages/core/AppBar'
   export default {
     name: 'PagesIndex',
 
     components: {
       PagesCoreAppBar,
-      PagesCoreView: () => import('./components/core/View'),
+      PagesCoreView: () => import('@/components/pages/core/View'),
     },
 
     created () {
