@@ -9,20 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/CheckboxField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/CheckboxField.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/DateField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/DateField.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/FileField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/FileField.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/RadioField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/RadioField.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/SelectField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/SelectField.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/TextField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/TextField.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/TextareaField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/TextareaField.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Fields/TreeselectField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/fields/TreeselectField.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/FormBase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/FormBase.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Mixins/FieldMixin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/mixins/FieldMixin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Form/Mixins/FormActionsMixin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Form/mixins/FormActionsMixin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialDropdown.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialTabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialTabs.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialWizard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/base/MaterialWizard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/DefaultForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/DefaultForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/core/Settings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/layouts/DashboardIndex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/layouts/PagesIndex.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,11 +214,11 @@
       <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\views\dashboard\pages\companies" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\layouts" />
       <recent name="C:\OpenServer\domains\e-signature\resources\frontend\src\components\dashboard\staffs" />
       <recent name="C:\OpenServer\domains\e-signature.loc\public" />
       <recent name="C:\OpenServer\domains\e-signature.loc\storage\app\public" />
       <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons\default" />
-      <recent name="C:\OpenServer\domains\e-signature.loc\resources\img\emailIcons" />
     </key>
   </component>
   <component name="RunManager">
@@ -263,7 +256,7 @@
       <workItem from="1611899934242" duration="2934000" />
       <workItem from="1612031146465" duration="14259000" />
       <workItem from="1612452507527" duration="3746000" />
-      <workItem from="1612509090917" duration="639000" />
+      <workItem from="1612509090917" duration="2194000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -426,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612509634115</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="changed folder structure, folders in lowercase">
+      <created>1612509809733</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1612509809733</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +486,8 @@
     <MESSAGE value="Form validation&#10;Laravel formbase package installed&#10;Created store for users" />
     <MESSAGE value="Department, Company create and update forms, lists" />
     <MESSAGE value="changed folder structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed folder structure" />
+    <MESSAGE value="changed folder structure, folders in lowercase" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed folder structure, folders in lowercase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="78" key="#ESLint" timestamp="1611938268417">
@@ -505,10 +506,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611938315401" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612509639784">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612509865933">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1612509639784" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1612509865933" />
     <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612175839060" />
     <state x="347" y="73" width="587" height="534" key="find.popup" timestamp="1611938935893">
       <screen x="0" y="0" width="1280" height="680" />

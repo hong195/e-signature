@@ -22,7 +22,7 @@ const router = new Router({
     },
     {
       path: '/',
-      component: () => import('@/views/pages/Index'),
+      component: () => import('@/layouts/PagesIndex'),
       children: [
         {
           name: 'login',
@@ -33,7 +33,7 @@ const router = new Router({
     },
     {
       path: '/',
-      component: () => import('@/views/dashboard/Index'),
+      component: () => import('@/layouts/DashboardIndex'),
       name: 'App',
       meta: {
         middleware: [
@@ -130,7 +130,7 @@ const router = new Router({
     },
     {
       path: '*',
-      component: () => import('@/views/pages/Index'),
+      component: () => import('@/layouts/PagesIndex'),
       children: [
         {
           name: '404 Error',

@@ -241,7 +241,7 @@
 </template>
 
 <script>
-  // Mixins
+  // mixins
   import Proxyable from 'vuetify/lib/mixins/proxyable'
   import { mapMutations, mapState } from 'vuex'
 
