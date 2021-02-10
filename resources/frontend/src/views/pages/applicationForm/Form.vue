@@ -171,27 +171,39 @@
               </validation-provider>
             </v-col>
             <v-col cols="12">
-              <application-preview :url="url" :schema="schema" />
+              <application-preview :url="schema.file.value" :schema="schema" />
             </v-col>
             <v-col cols="12">
+              <v-btn
+                v-if="schema.file.value"
+                color="red"
+                dark
+                small
+                @click="schema.file.value = null"
+              >
+                Удалить фотографию
+              </v-btn>
               <validation-provider
+                v-else
                 v-slot="{ errors }"
                 tag="div"
                 :rules="schema.file.rule"
                 :name="schema.file.label"
                 :vid="schema.file.name"
               >
-                <v-file-input
+                <v-text-field
                   v-model="schema.file.value"
                   :error-messages="errors"
                   :name="schema.file.name"
                   v-bind="schema.file.attributes"
                   :label="schema.file.label"
-                  accept="image/*"
-                  @change="fileChange"
+                  @click="fileChange"
                 />
               </validation-provider>
+              <!--              <image-cropper ref="imageCropper" v-model="schema.file.value" :selected-file="url" />-->
+              <cropper ref="imageCropper" v-model="schema.file.value" />
             </v-col>
+
             <v-col cols="12" class="text-center">
               <v-btn type="submit" color="success">
                 Отправить
@@ -209,9 +221,10 @@
   import { ValidationObserver } from 'vee-validate'
   import ApplicationPreview from '@/components/pages/ApplicationPreview'
   import { mask } from 'vue-the-mask'
+  import Cropper from '@/components/Cropper'
   export default {
     name: 'CreateUpdate',
-    components: { ApplicationPreview, ValidationObserver },
+    components: { Cropper, ApplicationPreview, ValidationObserver },
     directives: { mask },
     data: () => ({
       departments: [
@@ -336,9 +349,11 @@
       filterDepartments (val) {
         this.schema.department_id.options = this.departments.filter(item => item.business_id === val)
       },
-      fileChange (val) {
-        console.log(val)
-        this.url = URL.createObjectURL(val)
+      async fileChange (event) {
+        document.getElementById('avatarEditorCanvas').click()
+        setTimeout(() => {
+          this.$refs.imageCropper.dialog = true
+        }, 3000)
       },
       handle () {
         const formData = new FormData()

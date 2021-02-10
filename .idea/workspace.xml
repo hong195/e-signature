@@ -30,18 +30,6 @@
   <component name="ChangeListManager">
     <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Forms/UserForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Forms/UserForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartmentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/AbstractRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/CompanyRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Contracts/BaseEloquentRepositoryContract.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/components/Dashboard/Actions/StaffActions.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/companies/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/companies/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/departments/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/departments/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/dashboard/staffs/Index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +206,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories/Contracts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -283,6 +271,12 @@
       <workItem from="1612031146465" duration="14259000" />
       <workItem from="1612452507527" duration="3746000" />
       <workItem from="1612509090917" duration="2194000" />
+      <workItem from="1612844352418" duration="13871000" />
+      <workItem from="1612885925204" duration="1138000" />
+      <workItem from="1612931856158" duration="3076000" />
+      <workItem from="1612937959612" duration="1383000" />
+      <workItem from="1613024583288" duration="2258000" />
+      <workItem from="1613105955819" duration="1358000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -452,7 +446,28 @@
       <option name="project" value="LOCAL" />
       <updated>1612509809733</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Edit, Update, Delete Requests">
+      <created>1612524298456</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1612524298456</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Edit, Update, Delete Requests">
+      <created>1612524327834</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1612524327834</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Image cropper added">
+      <created>1612938836366</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1612938836366</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,13 +528,19 @@
     <MESSAGE value="Department, Company create and update forms, lists" />
     <MESSAGE value="changed folder structure" />
     <MESSAGE value="changed folder structure, folders in lowercase" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed folder structure, folders in lowercase" />
+    <MESSAGE value="Edit, Update, Delete Requests" />
+    <MESSAGE value="Image cropper added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image cropper added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="78" key="#ESLint" timestamp="1611938268417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="416" y="78" key="#ESLint/0.0.1280.680@0.0.1280.680" timestamp="1611938268417" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612938756140">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1612938756140" />
     <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612523386923">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -529,18 +550,29 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="418" y="253" width="444" height="238" key="ComposerInitDialogKey/0.0.1280.680@0.0.1280.680" timestamp="1612076169051" />
+    <state x="422" y="96" key="FileChooserDialogImpl" timestamp="1613125051806">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="422" y="96" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1613125051806" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1611938315401">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611938315401" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612509865933">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1612938839399">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1612509865933" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1612938839399" />
     <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612175839060" />
-    <state x="347" y="73" width="587" height="534" key="find.popup" timestamp="1611938935893">
+    <state x="347" y="73" width="588" height="535" key="find.popup" timestamp="1613125060367">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="347" y="73" width="588" height="535" key="find.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1613125060367" />
+    <state x="2441" y="112" width="881" height="817" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612849554669" />
     <state x="347" y="73" width="587" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1611938935893" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1612938724080">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1612938724080" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612847623967" />
   </component>
 </project>
