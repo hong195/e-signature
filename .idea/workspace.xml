@@ -28,7 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="" />
+    <list default="true" id="36b7c68e-e3a0-4519-bbd1-1b1cc5a3bbb4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/views/pages/applicationForm/Form.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -274,7 +278,7 @@
       <workItem from="1612931856158" duration="3076000" />
       <workItem from="1612937959612" duration="1383000" />
       <workItem from="1613024583288" duration="2258000" />
-      <workItem from="1613105955819" duration="1713000" />
+      <workItem from="1613105955819" duration="2480000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit.">
       <created>1610521748083</created>
@@ -561,10 +565,10 @@
     </state>
     <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1612938839399" />
     <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612175839060" />
-    <state x="347" y="73" width="588" height="535" key="find.popup" timestamp="1613125060367">
+    <state x="347" y="73" width="588" height="535" key="find.popup" timestamp="1613126318141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="347" y="73" width="588" height="535" key="find.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1613125060367" />
+    <state x="347" y="73" width="588" height="535" key="find.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1613126318141" />
     <state x="2441" y="112" width="881" height="817" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612849554669" />
     <state x="347" y="73" width="587" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1611938935893" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1612938724080">

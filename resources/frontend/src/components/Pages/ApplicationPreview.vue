@@ -71,13 +71,6 @@
                   >
                   oxymed.uz</a>
               </p>
-            <!--            <p style="margin-top: 5px; margin-bottom: 5px; font-size: 12px; color: #000; font-family: Arial, sans-serif">-->
-            <!--              <a href="#" style="text-decoration: none; color: #000;">-->
-            <!--                <img width="14px"-->
-            <!--                     src="https://oxymed.uz/uploads/card/oxymed/map_b.png" alt=""-->
-            <!--                >-->
-            <!--                Uzbekistan, 100044, Tashkent, Bezakchilik 18A</a>-->
-            <!--            </p>-->
             </td>
           </tr>
         </tbody>

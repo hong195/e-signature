@@ -40,10 +40,6 @@
               :append-icon="showPassword ? 'mdi-eye-off' : 'mdi-eye'"
               @click:append="() => (showPassword = !showPassword)"
             />
-            <!--            <v-checkbox-->
-            <!--              v-model="rememberMe"-->
-            <!--              label="Запомнить меня"-->
-            <!--            />-->
             <v-card-actions>
               <v-spacer />
               <v-btn

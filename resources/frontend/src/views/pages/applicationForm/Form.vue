@@ -200,7 +200,6 @@
                   @click="fileChange"
                 />
               </validation-provider>
-              <!--              <image-cropper ref="imageCropper" v-model="schema.file.value" :selected-file="url" />-->
               <cropper ref="imageCropper" v-model="schema.file.value" />
             </v-col>
 
